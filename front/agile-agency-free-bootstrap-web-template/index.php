@@ -1,3 +1,6 @@
+<?php 
+?>
+
 <!doctype html>
 <!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
@@ -100,15 +103,15 @@
     <div class="row"> 
       <!-- item -->
       <div class="col-md-3 text-center"><div class="b1"> <i class="circle"><img src="images/a1.jpg" alt="" /></i>
-        <h3>地图</h3>
-        <p>2D/3D的学校地图</p>
+        <h3>论坛</h3>
+        <p>校内的论坛平台，寻求帮助</p>
       </div></div>
       <!-- end: --> 
       
       <!-- item -->
       <div class="col-md-3 text-center"><div class="b1"><i class="circle"> <img src="images/a2.jpg" alt="" /></i>
-        <h3>论坛</h3>
-        <p>校内的论坛平台，寻求帮助</p>
+        <h3>地图</h3>
+        <p>2D/3D的学校地图</p>
       </div></div>
       <!-- end: --> 
       
@@ -129,7 +132,7 @@
   </div>
   <!--/.container--> 
 </section>
-<div class="testimonial-area">
+<div class="testimonial-area" style="height: 180px !important;">
   <div class="testimonial-solid">
       <div class="container">
           <div class="testi-icon-area">
@@ -138,20 +141,6 @@
               </div>
           </div>
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="">
-                      <a href="#"></a>
-                  </li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1" class="">
-                      <a href="#"></a>
-                  </li>
-                  <li data-target="#carousel-example-generic" data-slide-to="2" class="active">
-                      <a href="#"></a>
-                  </li>
-                  <li data-target="#carousel-example-generic" data-slide-to="3" class="">
-                      <a href="#"></a>
-                  </li>
-              </ol>
               <div class="carousel-inner">
                   <div class="item">
                       <p>Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
@@ -178,58 +167,31 @@
                       </p>
                   </div>
               </div>
+              <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="">
+                      <a href="#"></a>
+                  </li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1" class="">
+                      <a href="#"></a>
+                  </li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2" class="active">
+                      <a href="#"></a>
+                  </li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3" class="">
+                      <a href="#"></a>
+                  </li>
+              </ol>
           </div>
       </div>
   </div>
 </div>
-<section id="aboutUs">
-  <div class="container">
-    <div class="heading text-center"> 
-      <!-- Heading -->
-      <h2>About Us</h2>
-      <p>留学生帮助平台</p>
-    </div>
-    <div class="row feature design">
-      <div class="area1 columns right">
-        <h3>更好的精准的帮助服务</h3>
-        <p>Lorem ipsum dolor sit amet, ea eum labitur scsstie percipitoleat fabulas complectitur deterruisset at pro. Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt.
-          Nec et jority have suffered alteration. </p>
-        <p>Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt.
-          Nec et amet vidisse mentitumsstie percipitoleat fabulas. </p>
-      </div>
-      <div class="area2 columns feature-media left"> <img src="images/feature-img-1.png" alt="" width="100%"> </div>
-    </div>
-	
-    </div>
-	
-</section>
-<!-- <section id="clients">
-  <div id="demo" class="clients">
-    <div class="container"> 
-      <div class="row">
-        <div class="col-md-12">
-          <div class="customNavigation"> <a class="prev"><i class="fa fa-chevron-circle-left"></i></a> <a class="next"><i class="fa fa-chevron-circle-right"></i></a> </div>
-          <div id="owl-demo" class="owl-carousel">
-            <div class="item"> <span class="helper"> <img src="images/clients/client-1.png" alt="client" /></span> </div>
-            <div class="item"> <span class="helper"> <img src="images/clients/client-2.png" alt="client" /></span> </div>
-            <div class="item"> <span class="helper"> <img src="images/clients/client-3.png" alt="client" /></span> </div>
-            <div class="item"> <span class="helper"> <img src="images/clients/client-4.png" alt="client" /></span> </div>
-            <div class="item"> <span class="helper"> <img src="images/clients/client-5.png" alt="client" /></span> </div>
-            <div class="item"> <span class="helper"> <img src="images/clients/client-6.png" alt="client" /></span> </div>
-            <div class="item"> <span class="helper"> <img src="images/clients/client-7.png" alt="client" /></span> </div>
-            <div class="item"> <span class="helper"> <img src="images/clients/client-8.png" alt="client" /></span> </div>
-            <div class="item"> <span class="helper"> <img src="images/clients/client-9.png" alt="client" /></span> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
+
+
 <section id="work" class="page-section page">
   <div class="container text-center">
     <div class="heading">
-      <h2>Events</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, alias enim placeat earum quos ab.</p>
+      <h2>Events活动</h2>
+      <p>最新的学校活动通知</p>
     </div>
     <div class="row">
       <div class="col-md-12">
@@ -281,7 +243,7 @@
     <div class="row flat">
       <div class="col-lg-3 col-md-3 col-xs-12">
         <ul class="plan plan1">
-          <li class="plan-name">Basic </li>
+          <li class="plan-name">标准版 </li>
           <li class="plan-price"> <strong>$29</strong> / month </li>
           <li> <strong>5GB</strong> Storage </li>
           <li> <strong>1GB</strong> RAM </li>
@@ -293,7 +255,7 @@
       </div>
       <div class="col-lg-3 col-md-3 col-xs-12">
         <ul class="plan plan2 featured">
-          <li class="plan-name">Standard </li>
+          <li class="plan-name">学生版 </li>
           <li class="plan-price"> <strong>$39</strong> / month </li>
           <li> <strong>5GB</strong> Storage </li>
           <li> <strong>1GB</strong> RAM </li>
@@ -305,7 +267,7 @@
       </div>
       <div class="col-lg-3 col-md-3 col-xs-12">
         <ul class="plan plan3">
-          <li class="plan-name">Advanced </li>
+          <li class="plan-name">升级版 </li>
           <li class="plan-price"> <strong>$199</strong> / month </li>
           <li> <strong>50GB</strong> Storage </li>
           <li> <strong>8GB</strong> RAM </li>
@@ -317,7 +279,7 @@
       </div>
       <div class="col-lg-3 col-md-3 col-xs-12">
         <ul class="plan plan4">
-          <li class="plan-name">Mighty </li>
+          <li class="plan-name">商业版 </li>
           <li class="plan-price"> <strong>$999</strong> / month </li>
           <li> <strong>50GB</strong> Storage </li>
           <li> <strong>8GB</strong> RAM </li>
@@ -329,6 +291,49 @@
       </div>
     </div>
   </div>
+</section>
+<section id="clients">
+  <div id="demo" class="clients">
+    <div class="container"> 
+      <div class="row">
+        <div class="col-md-12">
+          <div class="customNavigation"> <a class="prev"><i class="fa fa-chevron-circle-left"></i></a> <a class="next"><i class="fa fa-chevron-circle-right"></i></a> </div>
+          <div id="owl-demo" class="owl-carousel">
+            <div class="item"> <span class="helper"> <img src="images/clients/client-1.png" alt="client" /></span> </div>
+            <div class="item"> <span class="helper"> <img src="images/clients/client-2.png" alt="client" /></span> </div>
+            <div class="item"> <span class="helper"> <img src="images/clients/client-3.png" alt="client" /></span> </div>
+            <div class="item"> <span class="helper"> <img src="images/clients/client-4.png" alt="client" /></span> </div>
+            <div class="item"> <span class="helper"> <img src="images/clients/client-5.png" alt="client" /></span> </div>
+            <div class="item"> <span class="helper"> <img src="images/clients/client-6.png" alt="client" /></span> </div>
+            <div class="item"> <span class="helper"> <img src="images/clients/client-7.png" alt="client" /></span> </div>
+            <div class="item"> <span class="helper"> <img src="images/clients/client-8.png" alt="client" /></span> </div>
+            <div class="item"> <span class="helper"> <img src="images/clients/client-9.png" alt="client" /></span> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="aboutUs">
+  <div class="container">
+    <div class="heading text-center"> 
+      <!-- Heading -->
+      <h2>About Us</h2>
+      <p>留学生帮助平台</p>
+    </div>
+    <div class="row feature design">
+      <div class="area1 columns right">
+        <h3>更好的精准的帮助服务</h3>
+        <p>Lorem ipsum dolor sit amet, ea eum labitur scsstie percipitoleat fabulas complectitur deterruisset at pro. Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt.
+          Nec et jority have suffered alteration. </p>
+        <p>Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt.
+          Nec et amet vidisse mentitumsstie percipitoleat fabulas. </p>
+      </div>
+      <div class="area2 columns feature-media left"> <img src="images/feature-img-1.png" alt="" width="100%"> </div>
+    </div>
+	
+    </div>
+	
 </section>
 <section id="team" class="page-section">
   <div class="container">
@@ -498,7 +503,7 @@
 <section class="copyright">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 text-center"> Copyright 2014 | All Rights Reserved -- Template by <a href="http://webThemez.com">WebThemez.com</a> </div>
+      <div class="col-sm-12 text-center"> Copyright 2023 | SW창압캡스톤디자인 우후우후 </div>
     </div>
     <!-- / .row --> 
   </div>

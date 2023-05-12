@@ -40,7 +40,7 @@
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><b><i>{ Agile }</i></b></a> </div>
+        <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><b><i></i></b></a> </div>
       <!--/.navbar-header-->
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
@@ -61,32 +61,32 @@
 </header>
 <!--/.header-->
 <div id="#top"></div>
-<section id="home">
+<section id="home" >
   <div class="banner-container"> 
   <!-- Slider -->
         <div id="main-slider" class="flexslider">
             <ul class="slides">
               <li>
-                <img src="images/slides/1.jpg" alt="" />
+                <img src="images/slides/4.jpg" />
                 <div class="flex-caption container">
-                    <h3>Flat Design</h3> 
-					<p>Doloribus omnis minus temporibus perferendis.</p> 
+                    <h3>今日公告</h3> 
+					<!-- <p>Doloribus omnis minus temporibus perferendis.</p>  -->
 					<a href="#" class="btn btn-theme">Read More</a>
                 </div>
               </li>
               <li>
-                <img src="images/slides/2.jpg" alt="" />
+                <img src="images/slides/5.jpg" alt="" />
                 <div class="flex-caption container">
-                    <h3>Responsive</h3> 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisi.</p> 
+                    <h3>研究成果</h3> 
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisi.</p>  -->
 					<a href="#" class="btn btn-theme">Read More</a>
                 </div>
               </li>
               <li>
-                <img src="images/slides/3.jpg" alt="" />
+                <img src="images/slides/6.jpg" alt="" />
                 <div class="flex-caption container">
-                    <h3>Bootstrap</h3> 
-					<p>Lorem ipsum dolor sit amet, consectetur ersf.</p> 
+                    <h3>日常活动</h3> 
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur ersf.</p>  -->
 					<a href="#" class="btn btn-theme">Read More</a>
                 </div>
               </li>
@@ -95,7 +95,7 @@
 	<!-- end slider -->
   </div>
   <div class="container hero-text2">
-  <h3>Lorem ipsum dolor sit amet, ea eum labitur scsstie percipitoleat<br/> fabulas complectitur deterruisset at pro</h3>
+  <h3>로마는 하루아침에 이루어진 것이 아니다<br/> 罗马不是一天建成的</h3>
   </div>
 </section>
 <section id="services" class="page-section colord">
@@ -238,7 +238,7 @@
     <div class="heading text-center"> 
       <!-- Heading -->
       <h2>Our Plans</h2>
-      <p>At lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+      <p>根据每个人不同的需求注册相对应的版本</p>
     </div>
     <div class="row flat">
       <div class="col-lg-3 col-md-3 col-xs-12">
@@ -351,11 +351,11 @@
             <!-- Image Hover Block -->
             <div class="member-img"> 
               <!-- Image  --> 
-              <img class="img-responsive" src="images/photo-1.jpg" alt=""> </div>
+              <img class="img-responsive" src="" alt=""> </div>
             <!-- Member Details -->
-            <h4>John Doe</h4>
+            <h4></h4>
             <!-- Designation --> 
-            <span class="pos">CEO</span>
+            <span class="pos"></span>
             <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
           </div>
         </div>
@@ -365,11 +365,11 @@
             <!-- Image Hover Block -->
             <div class="member-img"> 
               <!-- Image  --> 
-              <img class="img-responsive" src="images/photo-2.jpg" alt=""> </div>
+              <img class="img-responsive" src="" alt=""> </div>
             <!-- Member Details -->
-            <h4>Larry Doe</h4>
+            <h4></h4>
             <!-- Designation --> 
-            <span class="pos">Art Director</span>
+            <span class="pos"></span>
             <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
           </div>
         </div>
@@ -379,11 +379,11 @@
             <!-- Image Hover Block -->
             <div class="member-img"> 
               <!-- Image  --> 
-              <img class="img-responsive" src="images/photo-3.jpg" alt=""> </div>
+              <img class="img-responsive" src="" alt=""> </div>
             <!-- Member Details -->
-            <h4>Ranith Kays</h4>
+            <h4></h4>
             <!-- Designation --> 
-            <span class="pos">Manager</span>
+            <span class="pos"></span>
             <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
           </div>
         </div>
@@ -393,11 +393,11 @@
             <!-- Image Hover Block -->
             <div class="member-img"> 
               <!-- Image  --> 
-              <img class="img-responsive" src="images/photo-4.jpg" alt=""> </div>
+              <img class="img-responsive" src="" alt=""> </div>
             <!-- Member Details -->
-            <h4>Joan Ray</h4>
+            <h4></h4>
             <!-- Designation --> 
-            <span class="pos">Creative</span>
+            <span class="pos"></span>
             <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
           </div>
         </div>

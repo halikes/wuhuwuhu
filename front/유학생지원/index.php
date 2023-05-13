@@ -124,7 +124,7 @@
       
       <!-- item -->
       <div class="col-md-3 text-center"><div class="b1"><i class="circle"> <img src="images/a4.jpg" alt="" /></i>
-        <h3>公告</h3>
+        <a href="gonggao.php"><h3>公告</h3></a>
         <p>最新的学校公告</p>
       </div></div>
       <!-- end:--> 

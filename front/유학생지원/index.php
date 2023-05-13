@@ -102,31 +102,35 @@
   <div class="container">
     <div class="row"> 
       <!-- item -->
+      <a href="gonggao.php">
       <div class="col-md-3 text-center"><div class="b1"> <i class="circle"><img src="images/a1.jpg" alt="" /></i>
         <h3>论坛</h3>
         <p>校内的论坛平台，寻求帮助</p>
-      </div></div>
+      </div></div></a>
       <!-- end: --> 
       
       <!-- item -->
+      <a href="gonggao.php">
       <div class="col-md-3 text-center"><div class="b1"><i class="circle"> <img src="images/a2.jpg" alt="" /></i>
         <h3>地图</h3>
         <p>2D/3D的学校地图</p>
-      </div></div>
+      </div></div></a>
       <!-- end: --> 
       
       <!-- item -->
+      <a href="gonggao.php">
       <div class="col-md-3 text-center"><div class="b1"><i class="circle"> <img src="images/a3.jpg" alt="" /></i>
         <h3>学业规划</h3>
         <p>规划你的大学学习生活/职业规划</p>
-      </div></div>
+      </div></div></a>
       <!-- end: --> 
       
       <!-- item -->
+      <a href="gonggao.php">
       <div class="col-md-3 text-center"><div class="b1"><i class="circle"> <img src="images/a4.jpg" alt="" /></i>
-        <a href="gonggao.php"><h3>公告</h3></a>
+       <h3>公告</h3>
         <p>最新的学校公告</p>
-      </div></div>
+      </div></div></a>
       <!-- end:--> 
     </div>
   </div>

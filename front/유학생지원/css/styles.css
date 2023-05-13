@@ -65,6 +65,12 @@ h1, h2, h3, h4, h5, h6 {
 h6{
 	font-size:14px;
 }
+.collapse ul li {
+	font-size: medium;
+	margin-left: 10px;
+	
+}
+
 .dataTxt ul li{
 	list-style:none;
 	line-height:30px;
@@ -293,7 +299,7 @@ margin-bottom: 30px;
 	background: #38BEE7;  border: 0;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-/*background-color: #A43E89;*/
+background-color: #A43E89;
 ;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
@@ -370,10 +376,11 @@ margin-bottom: 30px;
 	line-height: 90px !important;
 }
 #section-strapline {
-	background: #f00bfff;
-	line-height: 42px;
-	clear: both;
+	background: #f00bff;
+	line-height:42px;
+	clear:both;
 }
+
 /*----Nav ----*/
 .header .navbar-brand {
 	float: left;
@@ -623,7 +630,9 @@ a.arrow-link:hover {
 	max-width: 100%;
 	height: auto;
 }
-
+.slides img {
+	height: 800px;
+}
 /* Features
     -------------------------------------------------*/
 #aboutUs {

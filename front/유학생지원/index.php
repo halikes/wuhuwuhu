@@ -14,7 +14,7 @@
 <!--[if lt IE 9]> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
-<title>Agile Agency Free Bootstrap Web Template</title>
+<title>HOME PAGE</title>
 <meta name="description" content="">
 <meta name="author" content="WebThemez">
 <!--[if lt IE 9]>
@@ -335,77 +335,77 @@
     </div>
 	
 </section>
-<section id="team" class="page-section">
-  <div class="container">
-    <div class="heading text-center"> 
+<!-- <section id="team" class="page-section"> -->
+  <!-- <div class="container">
+    <div class="heading text-center">  -->
       <!-- Heading -->
-      <h2>Our Team</h2>
+      <!-- <h2>Our Team</h2>
       <p>At variations of passages of Lorem Ipsum available, but the majority have suffered alteration..</p>
-    </div>
+    </div> -->
     <!-- Team Member's Details -->
-    <div class="team-content">
+    <!-- <div class="team-content">
       <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-6"> 
+        <div class="col-md-3 col-sm-6 col-xs-6">  -->
           <!-- Team Member -->
-          <div class="team-member pDark"> 
+          <!-- <div class="team-member pDark">  -->
             <!-- Image Hover Block -->
-            <div class="member-img"> 
+            <!-- <div class="member-img">  -->
               <!-- Image  --> 
-              <img class="img-responsive" src="" alt=""> </div>
+              <!-- <img class="img-responsive" src="" alt=""> </div> -->
             <!-- Member Details -->
-            <h4></h4>
+            <!-- <h4></h4> -->
             <!-- Designation --> 
-            <span class="pos"></span>
+            <!-- <span class="pos"></span>
+            <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div> -->
+          <!-- </div>
+        </div> -->
+        <!-- <div class="col-md-3 col-sm-6 col-xs-6">  -->
+          <!-- Team Member -->
+          <!-- <div class="team-member pDark">  -->
+            <!-- Image Hover Block -->
+            <!-- <div class="member-img">  -->
+              <!-- Image  --> 
+              <!-- <img class="img-responsive" src="" alt=""> </div> -->
+            <!-- Member Details -->
+            <!-- <h4></h4> -->
+            <!-- Designation --> 
+            <!-- <span class="pos"></span>
             <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6"> 
+        <div class="col-md-3 col-sm-6 col-xs-6">  -->
           <!-- Team Member -->
-          <div class="team-member pDark"> 
+          <!-- <div class="team-member pDark">  -->
             <!-- Image Hover Block -->
-            <div class="member-img"> 
+            <!-- <div class="member-img">  -->
               <!-- Image  --> 
-              <img class="img-responsive" src="" alt=""> </div>
+              <!-- <img class="img-responsive" src="" alt=""> </div> -->
             <!-- Member Details -->
-            <h4></h4>
+            <!-- <h4></h4> -->
             <!-- Designation --> 
-            <span class="pos"></span>
+            <!-- <span class="pos"></span>
             <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6"> 
+        <div class="col-md-3 col-sm-6 col-xs-6">  -->
           <!-- Team Member -->
-          <div class="team-member pDark"> 
+          <!-- <div class="team-member pDark">  -->
             <!-- Image Hover Block -->
-            <div class="member-img"> 
+            <!-- <div class="member-img">  -->
               <!-- Image  --> 
-              <img class="img-responsive" src="" alt=""> </div>
+              <!-- <img class="img-responsive" src="" alt=""> </div> -->
             <!-- Member Details -->
-            <h4></h4>
+            <!-- <h4></h4> -->
             <!-- Designation --> 
-            <span class="pos"></span>
-            <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-6"> 
-          <!-- Team Member -->
-          <div class="team-member pDark"> 
-            <!-- Image Hover Block -->
-            <div class="member-img"> 
-              <!-- Image  --> 
-              <img class="img-responsive" src="" alt=""> </div>
-            <!-- Member Details -->
-            <h4></h4>
-            <!-- Designation --> 
-            <span class="pos"></span>
+            <!-- <span class="pos"></span>
             <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/.container--> 
-</section>
+<!-- </section> -->
 <section id="contactUs" class="contact-parlex">
   <div class="parlex-back">
     <div class="container">

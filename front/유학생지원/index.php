@@ -50,7 +50,7 @@
           <li><a href="#work" class="scroll-link">Events</a></li>
           <li><a href="#plans" class="scroll-link">Plans</a></li>
           <li><a href="#team" class="scroll-link">Team</a></li>
-          <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
+          <li><a href="#contactUs" class="scroll-link">Login</a></li>
         </ul>
       </div>
       <!--/.navbar-collapse--> 

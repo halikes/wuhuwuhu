@@ -1,162 +1,83 @@
-/*
-Author URI: http://webthemez.com/
-*/
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
-* {
-	margin: 0;
-	padding: 0;
-	font-family: 'Open Sans', sans-serif;
-}
 body {
-	
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    
-}
-
-/*  Sliders
-==================================== */
- 
-.flex-direction-nav .flex-prev{
-    left:0px; 
-    }
-    .flex-direction-nav .flex-next{ 
-    right:0px;
-    }
-    .flex-caption {zoom: 1;
-    bottom: 120px;  color: #fff; margin: 0; padding: 25px 25px 25px 30px; position: absolute; left: 0; background: transparent;margin: 0 auto;right: 0;}
-    .flex-caption h3 {color: #fff; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase;font-size: 113px;font-weight: bolder;}
-    .flex-caption p {margin: 0 0 15px;font-size: 20px !important;}	
-    .flex-caption a{
-        background: transparent !important;
-        border: 1px solid #fff;
-    }
-    .flex-caption a:hover{
-        background: #fff !important;
-        border: 1px solid #fff;
-        color:#000 !important;
-    }
-
-    /* Header 
-----------------------------------------------*/
-#section-top {
-	background: #4E4E4E;
-}
-#section-top ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	float: right;
-}
-#section-top ul li {
-	display: inline-block;
-}
-#section-top ul li a {
-	border-radius: 2px;
-	display: inline-block;
-	height: 35px;
-	line-height: 35px;
-	width: 35px;
-	text-align: center;
-}
-#section-top .region-top-first {
-	float: right;
-}
-#home {
-background: #1E2020;
-margin-bottom: 30px;
-}
-.header {
-	position: fixed;
-	width: 100%; 
-	z-index: 50;
-	border-radius: 0;
-	top: 0px; 
-}
-.addBg {
-	background: rgba(39, 175, 211, 1);
-	transition: all 0.3s linear;
-	-webkit-transition: all 0.3s linear;
-	-moz-transition: all 0.3s linear;
-	-o-transition: all 0.3s linear;
-}
-.navbar-inverse {
-	background: transparent;
-}
-.navbar-inverse .navbar-toggle {
-	background-color: #A43E89;
-	background: #38BEE7;  border: 0;
-}
-.navbar-inverse .navbar-toggle .icon-bar {
-background-color: #A43E89;
-;
-}
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-	background: #38BEE7;
-	border: 0;
-}
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-	color: #fff;
-}
-.navbar-inverse .navbar-toggle:hover .icon-bar {
-	background: #fff;
-}
-.navbar-toggle {
-}
-.hero-text {
-	color: #676e73;
-	width: 83%;
-	text-align: center;
-	margin: 23% auto 24px auto;
-	font-family: 'Oswald', sans-serif;
-}
-.hero-text p {
-	font-family: 'Oswald', sans-serif;
-	padding: 0;
-	margin: 12px 8% 0;
-	text-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
-}
-.b1{
-    background: #FCFCFC;
-    padding: 15px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.29) !important;
-    border-top: 4px solid #27AFD3;
-}
-
-/* news */
-.news {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
   }
   
-  .news h2 {
-    color: #555;
-    font-size: 24px;
-    margin-top: 0;
-    margin-bottom: 10px;
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
   
-  .news p {
-    color: #777;
-    font-size: 18px;
-    line-height: 1.5;
-    margin-top: 0;
-    margin-bottom: 10px;
+  nav li {
+    margin-right: 20px;
   }
   
-  .news a {
-    color: #0077cc;
+  nav a {
+    color: #fff;
     text-decoration: none;
   }
   
-  .news a:hover {
+  nav a:hover {
     text-decoration: underline;
+  }
+  
+  .notice {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .notice h2 {
+    margin-top: 0;
+  }
+  
+  .notice ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .notice li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .notice a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .notice a:hover {
+    text-decoration: underline;
+  }
+  
+  .notice .date {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
   }
   

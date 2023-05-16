@@ -6,7 +6,7 @@
 <!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en-gb" class="no-js">
+<html lang="zh-CN" class="no-js">
 <!--<![endif]-->
 <head>
 <meta charset="utf-8">
@@ -49,8 +49,8 @@
           <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
           <li><a href="#work" class="scroll-link">Events</a></li>
           <li><a href="#plans" class="scroll-link">Plans</a></li>
-          <li><a href="#team" class="scroll-link">Team</a></li>
-          <li><a href="#contactUs" class="scroll-link">Login</a></li>
+          <li><a href="login.php" class="scroll-link">Login</a></li>
+          <li><a href="register.php" class="scroll-link">Register</a></li>
         </ul>
       </div>
       <!--/.navbar-collapse--> 

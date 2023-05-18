@@ -104,7 +104,7 @@
     <div class="container">
       <div class="row">
         <!-- item -->
-        <a href="gonggao.php">
+        <a href="#">
           <div class="col-md-3 text-center">
             <div class="b1"> <i class="circle"><img src="images/a1.jpg" alt="" /></i>
               <h3>论坛</h3>
@@ -115,7 +115,7 @@
         <!-- end: -->
 
         <!-- item -->
-        <a href="gonggao.php">
+        <a href="map.php">
           <div class="col-md-3 text-center">
             <div class="b1"><i class="circle"> <img src="images/a2.jpg" alt="" /></i>
               <h3>地图</h3>
@@ -126,7 +126,7 @@
         <!-- end: -->
 
         <!-- item -->
-        <a href="gonggao.php">
+        <a href="#">
           <div class="col-md-3 text-center">
             <div class="b1"><i class="circle"> <img src="images/a3.jpg" alt="" /></i>
               <h3>学业规划</h3>

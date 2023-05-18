@@ -1,7 +1,13 @@
-/* CSS样式中添加媒体查询，根据不同屏幕宽度设置地图高度 */
-@media screen and (max-width: 600px) {
-    #map {
-        
-        height: 100%;
-    }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map,
+#pano {
+  float: left;
+  height: 100%;
+  width: 50%;
 }

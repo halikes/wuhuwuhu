@@ -86,7 +86,7 @@
                     <input type="submit" id="submit" name="submit" class="btn btn-primary" value="Sign Up">
                 </div>
             </form>
-            <div class="logocaozuo">
+            <div class="caozuo">
 
                 <div><a href="login.php">Already have an account? Go to login</a></div>
             </div>

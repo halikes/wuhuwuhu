@@ -7,7 +7,8 @@ function initMap() {
     // 创建地图实例，设置初始中心位置和缩放级别
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 37.2964, lng: 126.8351},
-        zoom: 16
+        zoom: 16,
+        // gestureHandling: 'greedy'
     });
     infoWindow = new google.maps.InfoWindow();
     maxZoomService = new google.maps.MaxZoomService();
@@ -68,8 +69,8 @@ function initMap() {
     var directionsService = new google.maps.DirectionsService();
     var directionsRenderer = new google.maps.DirectionsRenderer();
     directionsRenderer.setMap(map);
-    var origin = new google.maps.LatLng(37.7749, -122.4194);
-    var destination = new google.maps.LatLng(37.775, -122.42);
+    var origin = new google.maps.LatLng(37.2964, 126.8351);
+    var destination = new google.maps.LatLng(37.2964, 126.8351);
     var request = {
         origin: origin,
         destination: destination,
@@ -81,5 +82,21 @@ function initMap() {
         }
     });
 
+    // 3D 无效代码
+    const panorama = new google.maps.StreetViewPanorama(
+        document.getElementById("pano"),
+        {
+          position: fenway,
+          pov: {
+            heading: 34,
+            pitch: 10,
+          },
+        }
+      );
+    
+      map.setStreetView(panorama);
+
 }
+
+window.initMap = initMap;
 

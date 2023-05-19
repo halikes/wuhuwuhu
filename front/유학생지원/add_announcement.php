@@ -36,3 +36,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 </body>
 </html>
+
+
+
+
+gonggao.php 
+
+<?php
+include 'db_connect.php'; // 包含数据库连接文件
+
+// 查询数据库获取公告列表
+$query = $db->query("SELECT * FROM announcements ORDER BY created_at DESC");
+$announcements = $query->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>学校公告</title>
+</head>
+<body>
+    <h1>学校公告</h1>
+    <ul>
+        <?php foreach ($announcements as $announcement): ?>
+            <li>
+                <h2><?php echo $announcement['title']; ?></h2>
+                <p><?php echo $announcement['content']; ?></p>
+                <p><?php echo $announcement['created_at']; ?></p>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</body>
+</html>

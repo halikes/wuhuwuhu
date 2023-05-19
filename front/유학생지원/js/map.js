@@ -13,6 +13,51 @@ function initMap() {
     });
     infoWindow = new google.maps.InfoWindow();
     maxZoomService = new google.maps.MaxZoomService();
+
+    // 搜索
+    var searchInput = document.getElementById('search-input');
+    var searchBox = new google.maps.places.SearchBox(searchInput);
+
+    map.addListener('bounds_changed', function () {
+        searchBox.setBounds(map.getBounds());
+    });
+
+    var markers = [];
+
+    searchBox.addListener('places_changed', function () {
+        var places = searchBox.getPlaces();
+
+        if (places.length === 0) {
+            return;
+        }
+
+        markers.forEach(function (marker) {
+            marker.setMap(null);
+        });
+        markers = [];
+
+        var bounds = new google.maps.LatLngBounds();
+        places.forEach(function (place) {
+            if (!place.geometry) {
+                console.log('Place geometry not found');
+                return;
+            }
+
+            markers.push(new google.maps.Marker({
+                map: map,
+                title: place.name,
+                position: place.geometry.location
+            }));
+
+            if (place.geometry.viewport) {
+                bounds.union(place.geometry.viewport);
+            } else {
+                bounds.extend(place.geometry.location);
+            }
+        });
+
+        map.fitBounds(bounds);
+    });
     
     // 3D
     const panorama = new google.maps.StreetViewPanorama(

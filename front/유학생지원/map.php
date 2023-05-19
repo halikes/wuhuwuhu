@@ -19,6 +19,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0aQl1Flcfgq695fxCi_VW63P2ORvM0FI&region=KR&callback=initMap" async defer></script>
 
 </head>
+<div> <a href="index.php">Home</a></div>
 <body>
     <div id="map"></div>
     <div id="pano"></div>

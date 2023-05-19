@@ -1,13 +1,16 @@
 <?php
 
-$servername = "localhost";
+$host = "localhost";
 $username = "root";
-$password = "123456";
+$password = "12345678";
 $dbname = "wuhuwuhu";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-if (!$conn) {
-    echo "connection failed ";
+try {
+    $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+    die('数据库连接错误: ' . $e->getMessage());
 }
+?>
 
 

@@ -6,15 +6,18 @@
   display: flex;
   position:absolute;
   padding: 10px;
-  width: 230px;
+  width: 80%;
   min-height: 90%;
   margin-left: 10%;
 }
 
-
+.lnb_wrap {
+  margin-left: 5%;
+}
 
 .lnb {
   padding: 15px;
+ 
 } 
 
 .theme {
@@ -67,3 +70,42 @@ li a:hover {
 } 
 
 
+.area {
+width: 70%;
+margin-top: 4%;
+margin-left: 4%;
+}
+
+.dataGridContainer {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.dataGridContainer th,
+.dataGridContainer td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.dataGridContainer th {
+  background-color: #f2f2f2;
+}
+
+.dataGridContainer tr {
+  height: 35px;
+}
+
+.dataGridContainer tr.even {
+  background-color: #f9f9f9;
+}
+
+
+#title {
+  font-weight: bold;
+  color: #333;
+}
+
+thead > tr >th {
+  text-align: center;
+}

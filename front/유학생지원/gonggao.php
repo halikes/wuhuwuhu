@@ -1,3 +1,6 @@
+<?php
+?>
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -44,15 +47,58 @@
           <h1>공지</h1>
         </div>
         <ul>
-          <li class="one"><a href="#">학사공지 ></a></li>
-          <li class="two"><a href="#">입학공지 ></a></li>
-          <li class="three"><a href="#">취업공지 ></a></li>
-          <li class="four"><a href="#">창업공지 ></a></li>
+          <li class="one"><a href="gonggao.php">학사공지 ></a></li>
+          <li class="two"><a href="ruxuetongzhi.php">입학공지 ></a></li>
+          <li class="three"><a href="jiuyetongzhi.php">취업공지 ></a></li>
+          <li class="four"><a href="chuangyetongzhi.php">창업공지 ></a></li>
         </ul>
+      </div>
+    </div>
+    <div class="area">
+      <div class="contents">
+        <table id="mainGrid" class="dataGridContainer">
+          <thead>
+            <tr>
+              <th>제목</th>
+              <th>작성일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="even">
+              <td>
+                <span id="title">[ERICA]2023학년도 2학기 제입학 신청 안내</span>
+              </td>
+              <td style="text-align:center">
+                2023.05.18
+              </td>
+            </tr>
+            <!--111111-->
+            <tr class="even">
+              <td>
+                <span id="title">2023-1학기 4차산업혁명창업 마이크로전공 학생모집(~05.19.(금))</span>
+              </td>
+              <td style="text-align:center">
+                2023.05.15
+              </td>
+            </tr>
+            <!--222222-->
+            <tr class="even">
+              <td>
+                <span id="title">2023학년도 1학기 자동차-sw융합전공 모집</span>
+              </td>
+              <td style="text-align:center">
+                2023.05.11
+              </td>
+            </tr>
+            <!--33333-->
+          </tbody>
+        </table>
       </div>
 
     </div>
+
   </div>
+
 
 
 

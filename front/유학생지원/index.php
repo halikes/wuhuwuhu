@@ -104,7 +104,7 @@
     <div class="container">
       <div class="row">
         <!-- item -->
-        <a href="#">
+        <a href="luntan.php">
           <div class="col-md-3 text-center">
             <div class="b1"> <i class="circle"><img src="images/a1.jpg" alt="" /></i>
               <h3>论坛</h3>
@@ -353,77 +353,7 @@
     </div>
 
   </section>
-  <!-- <section id="team" class="page-section"> -->
-  <!-- <div class="container">
-    <div class="heading text-center">  -->
-  <!-- Heading -->
-  <!-- <h2>Our Team</h2>
-      <p>At variations of passages of Lorem Ipsum available, but the majority have suffered alteration..</p>
-    </div> -->
-  <!-- Team Member's Details -->
-  <!-- <div class="team-content">
-      <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-6">  -->
-  <!-- Team Member -->
-  <!-- <div class="team-member pDark">  -->
-  <!-- Image Hover Block -->
-  <!-- <div class="member-img">  -->
-  <!-- Image  -->
-  <!-- <img class="img-responsive" src="" alt=""> </div> -->
-  <!-- Member Details -->
-  <!-- <h4></h4> -->
-  <!-- Designation -->
-  <!-- <span class="pos"></span>
-            <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div> -->
-  <!-- </div>
-        </div> -->
-  <!-- <div class="col-md-3 col-sm-6 col-xs-6">  -->
-  <!-- Team Member -->
-  <!-- <div class="team-member pDark">  -->
-  <!-- Image Hover Block -->
-  <!-- <div class="member-img">  -->
-  <!-- Image  -->
-  <!-- <img class="img-responsive" src="" alt=""> </div> -->
-  <!-- Member Details -->
-  <!-- <h4></h4> -->
-  <!-- Designation -->
-  <!-- <span class="pos"></span>
-            <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">  -->
-  <!-- Team Member -->
-  <!-- <div class="team-member pDark">  -->
-  <!-- Image Hover Block -->
-  <!-- <div class="member-img">  -->
-  <!-- Image  -->
-  <!-- <img class="img-responsive" src="" alt=""> </div> -->
-  <!-- Member Details -->
-  <!-- <h4></h4> -->
-  <!-- Designation -->
-  <!-- <span class="pos"></span>
-            <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">  -->
-  <!-- Team Member -->
-  <!-- <div class="team-member pDark">  -->
-  <!-- Image Hover Block -->
-  <!-- <div class="member-img">  -->
-  <!-- Image  -->
-  <!-- <img class="img-responsive" src="" alt=""> </div> -->
-  <!-- Member Details -->
-  <!-- <h4></h4> -->
-  <!-- Designation -->
-  <!-- <span class="pos"></span>
-            <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!--/.container-->
-  <!-- </section> -->
+
   <section id="contactUs" class="contact-parlex">
     <div class="parlex-back">
       <div class="container">

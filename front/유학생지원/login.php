@@ -1,4 +1,32 @@
 <?php
+session_start();
+
+if (isset($_SESSION['user_id'])) {
+    header('Location: index.php');
+    exit;
+}
+
+require_once 'connect.php';
+
+$error = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $statement = $db->prepare("SELECT * FROM users WHERE username = :username");
+    $statement->bindParam(':username', $username);
+    $statement->execute();
+    $user = $statement->fetch(PDO::FETCH_ASSOC);
+
+    if ($user && password_verify($password, $user['password'])) {
+        $_SESSION['user_id'] = $user['id'];
+        header('Location: index.php');
+        exit;
+    } else {
+        $error = '用户名或密码错误';
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -78,16 +106,17 @@
             <form method="post">
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" id="username" name="username" class="form-control">
+                    <input type="text" id="username" name="username" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" class="form-control">
+                    <input type="password" id="password" name="password" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <input type="submit" id="submit" name="submit" class="btn btn-primary" value="Sign In">
                 </div>
             </form>
+            <p><?php echo $error; ?></p>
             <div class="logocaozuo">
                 <h5><a href="register.php">REGISTER</a></h5>
 

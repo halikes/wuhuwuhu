@@ -1,4 +1,38 @@
 <?php
+session_start();
+
+if (isset($_SESSION['user_id'])) {
+    header('Location: index.php');
+    exit;
+}
+
+require_once 'connect.php';
+
+$error = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $statement = $db->prepare("SELECT * FROM users WHERE username = :username");
+    $statement->bindParam(':username', $username);
+    $statement->execute();
+    $user = $statement->fetch(PDO::FETCH_ASSOC);
+
+    if ($user) {
+        $error = '该用户名已存在';
+    } else {
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+        $statement = $db->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
+        $statement->bindParam(':username', $username);
+        $statement->bindParam(':password', $hashedPassword);
+        $statement->execute();
+
+        header('Location: login.php');
+        exit;
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -73,19 +107,20 @@
             <div class="logomima"><input type="password" id="password" name="password"></div>
             <div class="logobutton"><input type="submit" id="submit" name="submit" class="logobutton" value="REGISTER"></div>
         </form> -->
-            <form method="post">
+            <form method="post" action="">
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" id="username" name="username" class="form-control">
+                    <input type="text" id="username" name="username" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" class="form-control">
+                    <input type="password" id="password" name="password" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <input type="submit" id="submit" name="submit" class="btn btn-primary" value="Sign Up">
                 </div>
             </form>
+            <p><?php echo $error; ?></p>
             <div class="caozuo">
 
                 <div><a href="login.php">Already have an account? Go to login</a></div>

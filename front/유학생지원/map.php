@@ -33,7 +33,7 @@
     }
     .search-container {
             position: absolute;
-            bottom: 10px;
+            bottom: 100px;
             left: 10px;
             z-index: 1;
             background-color: #fff;
@@ -51,6 +51,7 @@
         }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0aQl1Flcfgq695fxCi_VW63P2ORvM0FI&region=KR&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0aQl1Flcfgq695fxCi_VW63P2ORvM0FI&libraries=places&callback=initMap" async defer></script>
     
 </head>
 
@@ -61,6 +62,7 @@
     </div>
     <div class="search-container">
         <input type="text" id="search-input" placeholder="search address">
+        <button onclick="search()">search</button>
     </div>
     <div id="pano"></div>
     <script src="js/map.js"></script>

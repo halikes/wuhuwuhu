@@ -58,7 +58,6 @@ function initMap() {
 
         map.fitBounds(bounds);
     });
-    
     // 3D
     const panorama = new google.maps.StreetViewPanorama(
         document.getElementById("pano"),

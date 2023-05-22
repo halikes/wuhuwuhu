@@ -43,7 +43,7 @@
         }
 
         #search-input {
-            width: 100px;
+            width: 150px;
             padding: 10px;
             font-size: 16px;
             border-radius: 5px;
@@ -62,7 +62,7 @@
     </div>
     <div class="search-container">
         <input type="text" id="search-input" placeholder="search address">
-        <button onclick="search()">search</button>
+        <!-- <button onclick="search()">search</button> -->
     </div>
     <div id="pano"></div>
     <script src="js/map.js"></script>

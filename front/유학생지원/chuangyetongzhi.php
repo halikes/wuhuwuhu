@@ -66,7 +66,10 @@
                     <tbody>
                         <tr class="even">
                             <td>
-                                <span id="title"> 2023-1학기 취창업 역량강화 프로그램 참가 신청 안내</span>
+                                <button class="dropdown-trigger"> 2023-1학기 취창업 역량강화 프로그램 참가 신청 안내</button>
+                                <div class="dropdown-content">
+                                    具体内容
+                                </div>
                             </td>
                             <td style="text-align:center">
                                 2023.05.8
@@ -75,7 +78,10 @@
                         <!--111111-->
                         <tr class="even">
                             <td>
-                                <span id="title"> 2023년 HYU 지식재산권 출원지원 프로그램 참가자 모집 (~5/19(금)까지)</span>
+                                <button class="dropdown-trigger"> 2023년 HYU 지식재산권 출원지원 프로그램 참가자 모집 (~5/19(금)까지)</button>
+                                <div class="dropdown-content">
+                                    具体内容
+                                </div>
                             </td>
                             <td style="text-align:center">
                                 2023.05.8
@@ -84,7 +90,10 @@
                         <!--222222-->
                         <tr class="even">
                             <td>
-                                <span id="title"> 2023년 제7회 서울혁신챌린지 아이디어, 팀빌딩 프로그램 참가안내</span>
+                                <button class="dropdown-trigger"> 2023년 제7회 서울혁신챌린지 아이디어, 팀빌딩 프로그램 참가안내</button>
+                                <div class="dropdown-content">
+                                    具体内容
+                                </div>
                             </td>
                             <td style="text-align:center">
                                 2023.04.28
@@ -117,5 +126,6 @@
 <script src="flexslider/jquery.flexslider.js"></script>
 <script src="js/custom.js" type="text/javascript"></script>
 <script src="js/owl-carousel/owl.carousel.js"></script>
+<script src="js/notice.js"></script>
 
 </html>

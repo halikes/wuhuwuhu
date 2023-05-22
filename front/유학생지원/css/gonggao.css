@@ -101,7 +101,8 @@ margin-left: 4%;
 }
 
 
-#title {
+.dropdown-trigger {
+  background-color: #ffffff;
   font-weight: bold;
   color: #333;
   padding: 10px;
@@ -113,13 +114,13 @@ thead > tr >th {
   text-align: center;
 }
 
-#dropdown-container {
+.dropdown-content {
   position: relative;
   display:none;
   padding: 10px;
   background-color: #f1f1f1;
 }
 
-#dropdown-container.show {
+.dropdown-content .show {
   display: block;
 }

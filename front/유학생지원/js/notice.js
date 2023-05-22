@@ -1,16 +1,10 @@
 
 
-var toggleButton = document.getElementById('title');
-    var dropdownContainer = document.getElementById('dropdown-container');
+var triggerButtons = document.querySelectorAll('.dropdown-trigger');
 
-    toggleButton.addEventListener('click', function() {
-      dropdownContainer.classList.toggle('show');
-    });
-
-    document.addEventListener('click', function(event) {
-      var isClickedInsideDropdown = dropdownContainer.contains(event.target) || toggleButton === event.target;
-
-      if (!isClickedInsideDropdown) {
-        dropdownContainer.classList.remove('show');
-      }
-    });
+triggerButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    var content = this.nextElementSibling;
+    content.classList.toggle('show');
+  });
+});

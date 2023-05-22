@@ -66,7 +66,10 @@
                     <tbody>
                         <tr class="even">
                             <td>
-                                <span id="title"> 대학-지자체 연계 '경기청년 진로 프로그램' 참여자 모집</span>
+                                <button class="dropdown-trigger"> 대학-지자체 연계 '경기청년 진로 프로그램' 참여자 모집</button>
+                                <div class="dropdown-content">
+                                    具体内容
+                                </div>
                             </td>
                             <td style="text-align:center">
                                 2023.05.19
@@ -75,7 +78,10 @@
                         <!--111111-->
                         <tr class="even">
                             <td>
-                                <span id="title">[컴투스] 2023 컴투스 QA캠퍼스 4기 모집</span>
+                                <button class="dropdown-trigger">[컴투스] 2023 컴투스 QA캠퍼스 4기 모집</button>
+                                <div class="dropdown-content">
+                                    具体内容
+                                </div>
                             </td>
                             <td style="text-align:center">
                                 2023.05.19
@@ -84,7 +90,10 @@
                         <!--222222-->
                         <tr class="even">
                             <td>
-                                <span id="title">[한국문화예술위원회] 2023년 예술 기술 매칭 데이 안내</span>
+                                <button class="dropdown-trigger">[한국문화예술위원회] 2023년 예술 기술 매칭 데이 안내</button>
+                                <div class="dropdown-content">
+                                    具体内容
+                                </div>
                             </td>
                             <td style="text-align:center">
                                 2023.05.19
@@ -117,5 +126,6 @@
 <script src="flexslider/jquery.flexslider.js"></script>
 <script src="js/custom.js" type="text/javascript"></script>
 <script src="js/owl-carousel/owl.carousel.js"></script>
+<script src="js/notice.js"></script>
 
 </html>

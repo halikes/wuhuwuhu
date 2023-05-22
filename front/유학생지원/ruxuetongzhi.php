@@ -66,7 +66,10 @@
                     <tbody>
                         <tr class="even">
                             <td>
-                                <span id="title">2023학년도 후기 국제학대학원 석사 및 박사과정 신입생 모집</span>
+                                <button class="dropdown-trigger">2023학년도 후기 국제학대학원 석사 및 박사과정 신입생 모집</button>
+                                <div class="dropdown-content">
+                                    具体内容
+                                </div>
                             </td>
                             <td style="text-align:center">
                                 2023.05.15
@@ -75,7 +78,10 @@
                         <!--111111-->
                         <tr class="even">
                             <td>
-                                <span id="title">[ERICA] 2023학년도 학생부종합전형 합격수기 공모전 안내(~4/22, 제출기한 연장)</span>
+                                <button class="dropdown-trigger">[ERICA] 2023학년도 학생부종합전형 합격수기 공모전 안내(~4/22, 제출기한 연장)</button>
+                                <div class="dropdown-content">
+                                    具体内容
+                                </div>
                             </td>
                             <td style="text-align:center">
                                 2023.04.17
@@ -84,7 +90,10 @@
                         <!--222222-->
                         <tr class="even">
                             <td>
-                                <span id="title">[국제팀] 2023학년도 2학기 외국인전형(대학원) 신입학 모집 안내</span>
+                                <button class="dropdown-trigger">[국제팀] 2023학년도 2학기 외국인전형(대학원) 신입학 모집 안내</button>
+                                <div class="dropdown-content">
+                                    具体内容
+                                </div>
                             </td>
                             <td style="text-align:center">
                                 2023.03.14
@@ -117,5 +126,6 @@
 <script src="flexslider/jquery.flexslider.js"></script>
 <script src="js/custom.js" type="text/javascript"></script>
 <script src="js/owl-carousel/owl.carousel.js"></script>
+<script src="js/notice.js"></script>
 
 </html>

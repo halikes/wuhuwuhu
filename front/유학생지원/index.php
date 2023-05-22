@@ -73,7 +73,7 @@
             <div class="flex-caption container">
               <h3>今日公告</h3>
               <!-- <p>Doloribus omnis minus temporibus perferendis.</p>  -->
-              <a href="#" class="btn btn-theme">Read More</a>
+              <a href="gonggao.php" class="btn btn-theme">Read More</a>
             </div>
           </li>
           <li>
@@ -81,7 +81,7 @@
             <div class="flex-caption container">
               <h3>学校地图</h3>
               <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisi.</p>  -->
-              <a href="#" class="btn btn-theme">Read More</a>
+              <a href="map.php" class="btn btn-theme">Read More</a>
             </div>
           </li>
           <li>
@@ -208,8 +208,8 @@
   <section id="work" class="page-section page">
     <div class="container text-center">
       <div class="heading">
-        <h2>Events活动</h2>
-        <p>最新的学校活动通知</p>
+        <h2>Events</h2>
+        <p>Latest Notices on School Activities</p>
       </div>
       <div class="row">
         <div class="col-md-12">

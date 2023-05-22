@@ -67,8 +67,8 @@
             <tr class="even">
               <td>
 
-                <span id="title">[ERICA]2023학년도 2학기 제입학 신청 안내</span>
-                <div id="dropdown-container">
+                <button class="dropdown-trigger">[ERICA]2023학년도 2학기 제입학 신청 안내</button>
+                <div class="dropdown-content">
                   具体内容
                 </div>
 
@@ -80,8 +80,8 @@
             <!--111111-->
             <tr class="even">
               <td>
-                <span id="title">2023-1학기 4차산업혁명창업 마이크로전공 학생모집(~05.19.(금))</span>
-                <div id="dropdown-container">
+                <button class="dropdown-trigger">2023-1학기 4차산업혁명창업 마이크로전공 학생모집(~05.19.(금))</button>
+                <div class="dropdown-content">
                   具体内容
                 </div>
 
@@ -93,8 +93,8 @@
             <!--222222-->
             <tr class="even">
               <td>
-                <span id="title">2023학년도 1학기 자동차-sw융합전공 모집</span>
-                <div id="dropdown-container">
+                <button class="dropdown-trigger">2023학년도 1학기 자동차-sw융합전공 모집</button>
+                <div class="dropdown-content">
                   具体内容
                 </div>
 

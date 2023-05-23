@@ -1,0 +1,61 @@
+div {
+    display: block;
+}
+div.tf-banner {
+    max-width: 1110px;
+    margin: 20px auto;
+}
+div.hero-text {
+    margin: 30px 8px 36px;
+    max-width: 78%;
+}
+
+span.hero-title {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 2.4em;
+    min-height: 1.2em;
+    font-weight: 600;
+    line-height: 1em;
+    display: block;
+    color:#ffffff;
+    margin-bottom: 0.9em;
+    margin-top: 1.8em;
+    float: left;
+}
+#main-outlet-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "sidebar content";
+    grid-template-columns: 0 minmax(0, 1fr);
+    gap: 0;
+}
+.wrap {
+    max-width: var(--d-max-width);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 10px;
+}
+.sidebar-wrapper {
+    display: flex;
+    --d-sidebar-highlight-color: var(--primary-low);
+    background-color: var(--primary-very-low);
+    grid-area: sidebar;
+    position: sticky;
+    top: var(--header-offset);
+    height: calc(100vh - var(--header-offset, 0));
+    align-self: start;
+    overflow-y: auto;
+}
+#main-outlet-wrapper #main-outlet {
+    grid-area: content;
+}
+#main-outlet {
+    flex: 1 0 auto;
+    max-width: calc(100% - 20px);
+    width: 1110px;
+    padding-top: 1.5em;
+}
+.container.list-container {
+    position: relative;
+}

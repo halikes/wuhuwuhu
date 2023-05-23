@@ -55,7 +55,61 @@
         <div id="main-outlet-wrapper" class="wrap">
             <div class="sidebar-wrapper"></div>
             <div id="main-outlet">
+                <div class="container list-container">
+                    <div id="ember47" class="categories-and-latest ember-view">
 
+                        <table class="category-list">
+                            <thead>
+                                <tr>
+                                    <th class="category" style="font-weight:600;"><span>category</span></th>
+                                    <th class="topics">Topics</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="category">
+                                        <span id="ember51" class="view">
+                                            Second-hand transaction
+                                        </span>
+                                        <div class="category-description">Furniture, cosmetics, books, everything you have can be traded.</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="category">
+                                        <span id="ember51" class="view">
+                                            General Discussion
+                                        </span>
+                                        <div class="category-description">Ask and answer questions here.Say hello to the community!</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="category">
+                                        <span id="ember51" class="view">
+                                            Find a part-time job
+                                        </span>
+                                        <div class="category-description">Use your spare time to earn some pocket money to cover your daily expenses.</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
+
+                        <div class="column">
+                            <div class="table-heading">
+                                Latest
+                            </div>
+                            <div class="latest-topic-list-item">
+                                <div class="topic-poster">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

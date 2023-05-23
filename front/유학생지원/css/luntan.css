@@ -1,13 +1,17 @@
+.applicaton {
+    width: 100%;
+    height: 100%;
+}
 div {
     display: block;
 }
 div.tf-banner {
-    max-width: 1110px;
-    margin: 20px auto;
+    max-width: 80%;
+    margin: 5px auto;
 }
 div.hero-text {
-    margin: 30px 8px 36px;
-    max-width: 78%;
+    margin: 36px 8px 36px;
+    max-width: 80%;
 }
 
 span.hero-title {
@@ -17,11 +21,13 @@ span.hero-title {
     font-weight: 600;
     line-height: 1em;
     display: block;
-    color:#ffffff;
+    color:#dda7c9;
     margin-bottom: 0.9em;
     margin-top: 1.8em;
     float: left;
+    margin-left: 15%;
 }
+
 #main-outlet-wrapper {
     box-sizing: border-box;
     width: 100%;
@@ -30,7 +36,7 @@ span.hero-title {
     grid-template-columns: 0 minmax(0, 1fr);
     gap: 0;
 }
-.wrap {
+ .wrap {
     max-width: var(--d-max-width);
     margin-right: auto;
     margin-left: auto;
@@ -53,9 +59,142 @@ span.hero-title {
 #main-outlet {
     flex: 1 0 auto;
     max-width: calc(100% - 20px);
-    width: 1110px;
+
     padding-top: 1.5em;
+    display: flex;
 }
 .container.list-container {
     position: relative;
 }
+.categories-and-latest {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+table.category-list {
+    margin-bottom: 3em;
+    max-width: 70%;
+    table-layout: fixed;
+    margin-left: 32%;
+   
+}
+
+
+
+
+table th {
+    font-family: 'Google Sans', 'Roboto', sans-serif;
+   font-size: medium;
+   font-weight: 400;
+    display: table-cell;
+   
+}
+
+.category > span {
+    margin-left: 32%;
+    
+}
+.category-list .topics {
+    width: 80px;
+    text-align: right;
+    float: left;
+}
+
+
+
+
+.view{
+    color: #ffffff;
+    font-size:20px;
+    font-weight: bold;
+    
+}
+.category-description {
+   margin-left: 32%;
+    margin-top: 0.5em;
+    overflow: hidden;
+    color: gray;
+    font-size: medium;
+} 
+
+
+  /* 表头样式 */
+  .category-list th {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* 表格单元格样式 */
+  .category-list td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  /* 鼠标悬停在表格行上的样式 */
+  .category-list tbody tr:hover {
+    background-color: #da9bca;
+  }
+  
+  /* 类别名称样式 */
+  .category-list .category span.view {
+    font-weight: 600;
+  }
+  
+  /* 类别描述样式 */
+  .category-list .category .category-description {
+    font-style: italic;
+    color: #888;
+  }
+/* .column {
+    flex: 1 0 0px;
+    flex-direction: row;
+    min-width: 300px;
+   
+   position:absolute;
+   
+}
+  .table-heading {
+    font-family: 'Google Sans', 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 12px 5px;
+    border-bottom: 3px solid #ffffff;
+ 
+
+}
+.latest-topic-list-item {
+    padding: 1em;
+    border-bottom: 1px solid var(--primary-low);
+    display: flex;
+    align-items: center;
+}
+.latest-topic-list-item .topic-poster {
+    position: relative;
+    width: 50px;
+} */
+
+/* 最新话题列表整体样式 */
+.column {
+    float: right;
+   margin-left: px;
+  }
+  
+  /* 表头样式 */
+  .table-heading {
+    background-color: #f2f2f2;
+    padding: 12px;
+    font-weight: 600;
+  }
+  
+  /* 最新话题列表项样式 */
+  .latest-topic-list-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+
+  
+ 

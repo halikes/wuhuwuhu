@@ -104,7 +104,7 @@
     <div class="container">
       <div class="row">
         <!-- item -->
-        <a href="luntan.php">
+        <a href="luntan2.php">
           <div class="col-md-3 text-center">
             <div class="b1"> <i class="circle"><img src="images/a1.jpg" alt="" /></i>
               <h3>论坛</h3>

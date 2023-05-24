@@ -1,0 +1,126 @@
+
+
+.wrap {
+  margin-top: 5%;
+  background-color: #5073d3;
+  display: flex;
+  position:absolute;
+  padding: 10px;
+  width: 80%;
+  min-height: 90%;
+  margin-left: 10%;
+}
+
+.lnb_wrap {
+  margin-left: 5%;
+}
+
+.lnb {
+  padding: 15px;
+ 
+} 
+
+.theme {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.theme h1 {
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #666;
+  font-size: 25px;
+
+}
+
+li a:hover {
+  background-color: #e9e9e9;
+  color: #333;
+}
+
+.one {
+  background-color: #f2f2f2;
+}
+
+.two {
+  background-color: #e6e6e6;
+}
+
+.three {
+  background-color: #d9d9d9;
+}
+
+.four {
+  background-color: #cccccc;
+} 
+
+
+.area {
+width: 70%;
+margin-top: 4%;
+margin-left: 4%;
+}
+
+.dataGridContainer {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.dataGridContainer th,
+.dataGridContainer td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.dataGridContainer th {
+  background-color: #f2f2f2;
+}
+
+.dataGridContainer tr {
+  height: 35px;
+}
+
+.dataGridContainer tr.even {
+  background-color: #f9f9f9;
+}
+
+
+.dropdown-trigger {
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+thead > tr >th {
+  text-align: center;
+}
+
+.dropdown-content {
+  position: relative;
+  display:none;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.dropdown-content .show {
+  display: block;
+}

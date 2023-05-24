@@ -99,7 +99,7 @@ if (isset($_COOKIE['username'])){
             <div class="flex-caption container">
               <h3>学业规划</h3>
               <!-- <p>Lorem ipsum dolor sit amet, consectetur ersf.</p>  -->
-              <a href="#" class="btn btn-theme">Read More</a>
+              <a href="chatgpt.php" class="btn btn-theme">Read More</a>
             </div>
           </li>
         </ul>
@@ -116,7 +116,7 @@ if (isset($_COOKIE['username'])){
         <!-- item -->
         <a href="luntan2.php">
           <div class="col-md-3 text-center">
-            <div class="b1"> <i class="circle"><img src="images/a1.jpg" alt="" /></i>
+            <div class="b1"> <i class="circle"><img src="images/a1.jpg" /></i>
               <h3>论坛</h3>
               <p>校内的论坛平台，寻求帮助</p>
             </div>
@@ -127,7 +127,7 @@ if (isset($_COOKIE['username'])){
         <!-- item -->
         <a href="map.php">
           <div class="col-md-3 text-center">
-            <div class="b1"><i class="circle"> <img src="images/a2.jpg" alt="" /></i>
+            <div class="b1"><i class="circle"> <img src="images/a2.jpg" /></i>
               <h3>地图</h3>
               <p>2D/3D的学校地图</p>
             </div>
@@ -138,7 +138,7 @@ if (isset($_COOKIE['username'])){
         <!-- item -->
         <a href="#">
           <div class="col-md-3 text-center">
-            <div class="b1"><i class="circle"> <img src="images/a3.jpg" onclick="window.location.href = 'chatgpt.php'" /></i>
+            <div class="b1"><i class="circle"> <img src="images/a3.jpg" /></i>
               <h3>学业规划</h3>
               <p>规划你的大学学习生活/职业规划</p>
             </div>
@@ -149,7 +149,7 @@ if (isset($_COOKIE['username'])){
         <!-- item -->
         <a href="gonggao.php">
           <div class="col-md-3 text-center">
-            <div class="b1"><i class="circle"> <img src="images/a4.jpg" alt="" /></i>
+            <div class="b1"><i class="circle"> <img src="images/a4.jpg" /></i>
               <h3>公告</h3>
               <p>最新的学校公告</p>
             </div>
@@ -170,30 +170,71 @@ if (isset($_COOKIE['username'])){
         </div>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
-            <div class="item">
-              <p>Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
-              <p>
-                <b>- Mark John -</b>
-              </p>
-            </div>
-            <div class="item">
-              <p>Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
-              <p>
-                <b>- Jaison Warner -</b>
-              </p>
-            </div>
-            <div class="item active">
-              <p>Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
-              <p>
-                <b>- Tony Antonio -</b>
-              </p>
-            </div>
-            <div class="item">
-              <p>Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
-              <p>
-                <b>- Leena Doe -</b>
-              </p>
-            </div>
+              <?php
+              include "connect.php";
+              $sql = "select max(id) as max_value from tips";
+              $result = $conn->query($sql);
+              $row = $result->fetch_assoc();
+              $maxValue = $row["max_value"];
+              $randomNumber = rand(1, $maxValue - 4);
+
+              $sql = "select username,content from tips where id = '$randomNumber'";
+              $result = $conn->query($sql);
+              $row = $result->fetch_assoc();
+              $username = $row['username'];
+              $content = $row['content'];
+              echo "
+                    <div class='item active'>
+                        <p>$content</p>
+                        <p>
+                            <b>- $username -</b>
+                        </p>
+                    </div>
+                    ";
+
+              $sql = "select username,content from tips where id = '$randomNumber' + 1";
+              $result = $conn->query($sql);
+              $row = $result->fetch_assoc();
+              $username = $row['username'];
+              $content = $row['content'];
+              echo "
+                    <div class='item'>
+                        <p>$content</p>
+                        <p>
+                            <b>- $username -</b>
+                        </p>
+                    </div>
+                    ";
+
+              $sql = "select username,content from tips where id = '$randomNumber' + 2";
+              $result = $conn->query($sql);
+              $row = $result->fetch_assoc();
+              $username = $row['username'];
+              $content = $row['content'];
+              echo "
+                    <div class='item'>
+                        <p>$content</p>
+                        <p>
+                            <b>- $username -</b>
+                        </p>
+                    </div>
+                    ";
+
+              $sql = "select username,content from tips where id = '$randomNumber' + 3";
+              $result = $conn->query($sql);
+              $row = $result->fetch_assoc();
+              $username = $row['username'];
+              $content = $row['content'];
+              echo "
+                    <div class='item'>
+                        <p>$content</p>
+                        <p>
+                            <b>- $username -</b>
+                        </p>
+                    </div>
+                    ";
+
+            ?>
           </div>
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="">

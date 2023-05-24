@@ -1,11 +1,4 @@
-<?php
-if (isset($_COOKIE['username'])){
-    $state = "Account";
-}else{
-    $state = "Login";
-    header("refresh:0;url=login.php");
-}
-?>
+
 
 <!doctype html>
 <!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
@@ -38,88 +31,6 @@ if (isset($_COOKIE['username'])){
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Font Awesome -->
     <link href="font/css/font-awesome.min.css" rel="stylesheet">
-
-    <style>
-        .input-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        #user-input {
-            width: 50%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        #send-button {
-            padding: 8px 16px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-left: 10px;
-        }
-
-        .row {
-            display: flex;
-        }
-
-        .login__form {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .login__register {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .login__register h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .login__register .primary-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .primary-btn {
-            margin-left: -250px;
-        }
-
-        .login__form h3 {
-            font-size: 35px;
-            margin-bottom: 20px;
-        }
-
-        .input__item {
-            margin-bottom: 15px;
-        }
-
-        .input__item input {
-            width: 60%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .site-btn {
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 
 <body>
@@ -132,13 +43,14 @@ if (isset($_COOKIE['username'])){
             <!--/.navbar-header-->
             <div id="main-nav" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav" id="mainNav">
+<!--                    <li class="active" id="firstLink"><a href="#home" class="scroll-link" >Home</a></li>-->
                     <li><a href="index.php" class="scroll-link">Home</a></li>
-                    <li><a href="#services" class="scroll-link">Services</a></li>
-                    <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-                    <li><a href="#work" class="scroll-link">Events</a></li>
-                    <li><a href="#plans" class="scroll-link">Plans</a></li>
-                    <li><a href="#team" class="scroll-link">Team</a></li>
-                    <li><a href="userpage.php" class="scroll-link">Account</a></li>
+<!--                    <li><a href="#services" class="scroll-link">Services</a></li>-->
+<!--                    <li><a href="#aboutUs" class="scroll-link">About Us</a></li>-->
+<!--                    <li><a href="#work" class="scroll-link">Events</a></li>-->
+<!--                    <li><a href="#plans" class="scroll-link">Plans</a></li>-->
+<!--                    <li><a href="#team" class="scroll-link">Team</a></li>-->
+
                 </ul>
             </div>
             <!--/.navbar-collapse-->
@@ -146,6 +58,74 @@ if (isset($_COOKIE['username'])){
         <!--/.navbar-->
     </div>
     <!--/.container-->
+</header>
+
+<header>
+    <!--    自定义样式-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 50px auto;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .profile h1, .profile p {
+            margin: 0;
+        }
+
+        .profile .logout-btn {
+            background-color: #4c9cde;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .profile input[type="file"] {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            display: block;
+            font-size: 16px;
+            margin: 0;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #notice {
+            color: #c0abab;
+            text-decoration: none;
+            float: right;
+        }
+
+    </style>
 </header>
 <!--/.header-->
 <div id="#top"></div>
@@ -188,19 +168,6 @@ if (isset($_COOKIE['username'])){
     </div>
 </section>
 
-<!--gpt部分-->
-<section id="content" class="page-section colord">
-    <div class="container">
-        <div class="chat-wrapper">
-            <div id="chat-container"></div>
-            <div class="input-container">
-                <input id="user-input" type="text" placeholder="Enter your message to gpt-curie...">
-                <button id="send-button">Send</button>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</section>
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
         // 在页面加载完成后执行滚动操作
@@ -214,31 +181,66 @@ if (isset($_COOKIE['username'])){
 <?php
 include "connect.php";
 $username = $_COOKIE['username'];
-$sql = "select gptusage from users where username = '$username'";
-$result =  $conn->query($sql);
+
+$sql = "select username,image,gptusage,permission from users where username = '$username'";
+$result = $conn->query($sql);
 $row = $result->fetch_assoc();
+$username = $row['username'];
+$image = $row['image'];
 $gptusage = $row['gptusage'];
-$sql1 = "update users set gptusage = '$gptusage' where username = '$username'";
-$result =  $conn->query($sql1);
-echo
-"<script>
-    var sendButton = document.getElementById('send-button');
-    var maxClicks = $gptusage; // 设置最大点击次数
-    var input = document.getElementById('user-input');
-    input.setAttribute('placeholder', 'you gpt model has ' + maxClicks + ' uses left');
-    sendButton.addEventListener('click', function() {
-        maxClicks--;
-        input.setAttribute('placeholder', 'you gpt model has ' + maxClicks + ' uses left');
-        if (maxClicks == -1) {
-            sendButton.disabled = true; // 禁用按钮
-            alert('gpt usage is over');
-            window.location = 'chatusage.php';
-        }
-    });
-</script>";
+$permission = $row['permission'];
+$len = strlen($image);
+$vip = "";
+if ($len < 4){
+    $image = 'nulluser.jpg';
+}
+if ($permission == "0"){
+    $vip = "일반 사용자";
+}else if($permission == "1"){
+    $vip = "인증된 학생";
+}else if($permission == "2"){
+    $vip = "고급 회원";
+}else if($permission == "3"){
+    $vip = "상업용 버전";
+}
 
+echo "<div class='profile'>";
+echo "<img src='image/$image' alt='Avatar' onclick='document.getElementById(\"file-input\").click()'>";
+echo "<h1>$username</h1>";
+//echo "<p>User Account: $account</p>";
+echo "<p>User : $vip</p>";
+echo "<p>User Account gpt model usage: $gptusage</p>";
+echo "<button onclick='logout()' class='logout-btn'>Logout</button>";
+//    echo "<input type='submit' name='submit' class='logout-btn' value='Modify avatar'>";
 
+echo "<form id='content' action='postfile.php' method='post' enctype='multipart/form-data'>
+                        <input type='file' name='file' id='file' style='display: none'>
+                        <input type='submit' name='submit' class='logout-btn' value='upload avatar'>
+                        <a id='notice' href='tips.php'>Tips 하나 올려주세요~</a>
+                    </form>";
+echo "<input type= 'file' accept='image/*' onchange='replaceAvatar(event)' id='file-input' style='display: none;'>";
+echo "</div>";
 ?>
+
+<script>
+    function logout() {
+        // 执行退出登录的逻辑
+        // 例如，重定向到登录页面或执行其他操作
+        window.location = "loginout-.php";
+    }
+    function replaceAvatar(event) {
+        var file = event.target.files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                document.querySelector('.profile img').src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+            document.getElementById('file').files = event.target.files;
+        }
+    }
+
+</script>
 
 <div class="testimonial-area" style="height: 180px !important;">
     <div class="testimonial-solid">

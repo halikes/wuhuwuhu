@@ -1,11 +1,3 @@
-<?php
-if (isset($_COOKIE['username'])){
-    $state = "Account";
-}else{
-    $state = "Login";
-    header("refresh:0;url=login.php");
-}
-?>
 
 <!doctype html>
 <!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
@@ -133,11 +125,6 @@ if (isset($_COOKIE['username'])){
             <div id="main-nav" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav" id="mainNav">
                     <li><a href="index.php" class="scroll-link">Home</a></li>
-                    <li><a href="#services" class="scroll-link">Services</a></li>
-                    <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-                    <li><a href="#work" class="scroll-link">Events</a></li>
-                    <li><a href="#plans" class="scroll-link">Plans</a></li>
-                    <li><a href="#team" class="scroll-link">Team</a></li>
                     <li><a href="userpage.php" class="scroll-link">Account</a></li>
                 </ul>
             </div>
@@ -184,22 +171,8 @@ if (isset($_COOKIE['username'])){
         <!-- end slider -->
     </div>
     <div class="container hero-text2">
-        <h3>Lorem ipsum dolor sit amet, ea eum labitur scsstie percipitoleat<br/> fabulas complectitur deterruisset at pro</h3>
+        <h3>Tips 하나 공유하겠습니다. (한국어 학습/학교 내 활동/수업 관련)</h3>
     </div>
-</section>
-
-<!--gpt部分-->
-<section id="content" class="page-section colord">
-    <div class="container">
-        <div class="chat-wrapper">
-            <div id="chat-container"></div>
-            <div class="input-container">
-                <input id="user-input" type="text" placeholder="Enter your message to gpt-curie...">
-                <button id="send-button">Send</button>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
 </section>
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
@@ -210,35 +183,19 @@ if (isset($_COOKIE['username'])){
         }
     });
 </script>
+<!--gpt部分-->
+<section id="content" class="page-section colord">
+    <div class="container">
+        <div class="chat-wrapper">
+            <div id="chat-container"></div>
+            <form class="input-container" method="POST" action="tips-.php">
+                <input id="user-input" type="text" name="message" placeholder="Tips 입력">
+                <button type="submit" id="send-button">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
 
-<?php
-include "connect.php";
-$username = $_COOKIE['username'];
-$sql = "select gptusage from users where username = '$username'";
-$result =  $conn->query($sql);
-$row = $result->fetch_assoc();
-$gptusage = $row['gptusage'];
-$sql1 = "update users set gptusage = '$gptusage' where username = '$username'";
-$result =  $conn->query($sql1);
-echo
-"<script>
-    var sendButton = document.getElementById('send-button');
-    var maxClicks = $gptusage; // 设置最大点击次数
-    var input = document.getElementById('user-input');
-    input.setAttribute('placeholder', 'you gpt model has ' + maxClicks + ' uses left');
-    sendButton.addEventListener('click', function() {
-        maxClicks--;
-        input.setAttribute('placeholder', 'you gpt model has ' + maxClicks + ' uses left');
-        if (maxClicks == -1) {
-            sendButton.disabled = true; // 禁用按钮
-            alert('gpt usage is over');
-            window.location = 'chatusage.php';
-        }
-    });
-</script>";
-
-
-?>
 
 <div class="testimonial-area" style="height: 180px !important;">
     <div class="testimonial-solid">
@@ -248,8 +205,8 @@ echo
                     <i class="fa fa-microphone"></i>
                 </div>
             </div>
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
+            <div id='carousel-example-generic' class='carousel slide' data-ride='carousel'>
+                <div class='carousel-inner'>
                     <?php
                     include "connect.php";
                     $sql = "select max(id) as max_value from tips";
@@ -314,8 +271,10 @@ echo
                     </div>
                     ";
 
-                    ?>
+//                    ?>
                 </div>
+
+
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="">
                         <a href="#"></a>

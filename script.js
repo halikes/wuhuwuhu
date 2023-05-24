@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 async function sendMessage(message) {
-    const API_KEY = "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"; // 替换为您的API密钥
+    const API_KEY = ""; // 替换为您的API密钥
     const apiUrl = "https://api.openai.com/v1/engines/curie:ft-create-by-shi-yuhang-2023-05-11-23-24-20/completions";
 
 

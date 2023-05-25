@@ -1,4 +1,16 @@
 <?php
+include 'connect.php';
+
+$query = "SELECT * FROM gonggao";
+$result = $conn->query($query);
+
+$gonggaos = array();
+
+if ($result->num_rows > 0) {
+  while ($row = $result->fetch_assoc()) {
+    $gonggaos[] = $row;
+  }
+}
 ?>
 
 <!DOCTYPE html>
@@ -29,16 +41,12 @@
         <div id="main-nav" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active" id="firstLink"><a href="index.php" class="scroll-link">Home</a></li>
-
+            <li class="active" id="firstLink"><a href="add_announcement.php" class="scroll-link">Add</a></li>
           </ul>
         </div>
-        <!--/.navbar-collapse-->
       </nav>
-      <!--/.navbar-->
     </div>
-    <!--/.container-->
   </header>
-  <!--header-->
 
   <div class="wrap">
     <div class="lnb_wrap">
@@ -59,24 +67,24 @@
         <table id="mainGrid" class="dataGridContainer">
           <thead>
             <tr>
-              <th>제목</th>
-              <th>작성일</th>
+              <th>Title</th>
+              <th>Date</th>
             </tr>
           </thead>
           <tbody>
+            <?php foreach ($gonggaos as $gonggao) { ?>
             <tr class="even">
               <td>
-
-                <button class="dropdown-trigger">[ERICA]2023학년도 2학기 제입학 신청 안내</button>
+                <button class="dropdown-trigger"><?php echo $gonggao['title']?></button>
                 <div class="dropdown-content">
-                  具体内容
+                  <?php echo $gonggao['content']?>
                 </div>
-
               </td>
               <td style="text-align:center">
-                2023.05.18
+                <?php echo $gonggao['created_at']?>
               </td>
             </tr>
+            <?php } ?>
             <!--111111-->
             <tr class="even">
               <td>

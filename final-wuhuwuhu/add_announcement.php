@@ -5,66 +5,69 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // 处理表单提交
     $title = $_POST['title'];
     $content = $_POST['content'];
-    $created_at = date('Y-m-d H:i:s');
+    $created_at = date('Y-m-d');
 
     // 插入数据到数据库
-    $query = $db->prepare("INSERT INTO gonggao (title, content, created_at) VALUES (:title, :content, :created_at)");
-    $query->bindParam(':title', $title);
-    $query->bindParam(':content', $content);
-    $query->bindParam(':created_at', $created_at);
-    // 查询 $query->execute();
+    $query = "INSERT INTO gonggao (title, content, created_at) VALUES ('$title', '$content', '$created_at')";
+    if ($conn->query($query) === TRUE) {
+        echo "数据插入成功";
+        header('Location: gonggao.php');
+        exit();
+      } else {
+        echo "数据插入失败: " . $conn->error;
+      }
 
     // 重定向到公告列表页面
-    header('Location: announcements.php');
-    exit();
+    
 }
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>添加公告</title>
+    <title>Add_announcement</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/gonggao.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+    <link href="flexslider/flexslider.css" rel="stylesheet" />
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="font/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+    body {
+      display: flex;
+      flex-direction: column; /* 垂直方向排列子元素 */
+      justify-content: center; /* 在垂直方向上居中对齐子元素 */
+      align-items: center; /* 在水平方向上居中对齐子元素 */
+      height: 100vh; /* 设置容器高度为视窗高度 */
+    }
+  </style>
 </head>
-<body>
-    <h1>添加公告</h1>
+<body style="background-color: #88d1ff;">
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active" id="firstLink"><a href="index.php" class="scroll-link">Home</a></li>
+                        <li class="active" id="firstLink"><a href="gonggao.php" class="scroll-link">back</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <h1>Add</h1>
     <form method="POST" action="">
-        <label for="title">标题：</label>
+        <label for="title">title：</label><br>
         <input type="text" name="title" id="title" required><br><br>
-        <label for="content">内容：</label><br>
+        <label for="content">content：</label><br>
         <textarea name="content" id="content" rows="4" required></textarea><br><br>
-        <input type="submit" value="发布公告">
+        <input type="submit" value="submit">
     </form>
-</body>
-</html>
-
-
-
-
-gonggao.php 
-
-<?php
-include 'db_connect.php'; // 包含数据库连接文件
-
-// 查询数据库获取公告列表
-$query = $db->query("SELECT * FROM announcements ORDER BY created_at DESC");
-$announcements = $query->fetchAll(PDO::FETCH_ASSOC);
-?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>学校公告</title>
-</head>
-<body>
-    <h1>学校公告</h1>
-    <ul>
-        <?php foreach ($announcements as $announcement): ?>
-            <li>
-                <h2><?php echo $announcement['title']; ?></h2>
-                <p><?php echo $announcement['content']; ?></p>
-                <p><?php echo $announcement['created_at']; ?></p>
-            </li>
-        <?php endforeach; ?>
-    </ul>
 </body>
 </html>

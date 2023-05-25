@@ -40,78 +40,66 @@ if (isset($_COOKIE['username'])){
     <link href="font/css/font-awesome.min.css" rel="stylesheet">
 
     <style>
-        .post {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            margin-bottom: 20px;
-            width: 40%;
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container1 {
+            max-width: 500px;
             margin: 0 auto;
+            padding: 20px;
         }
 
-        .post-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
             margin-bottom: 10px;
-        }
-
-        .post-title {
-            margin: 0;
-        }
-
-        .user-info {
-            display: flex;
-            align-items: center;
-        }
-
-        .avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-right: 10px;
-        }
-
-        .avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .username {
             font-weight: bold;
         }
 
-        .post-content {
-            margin-bottom: 10px;
+        .form-group input[type="text"],
+        .form-group textarea {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+            margin: 0 auto;
+            display: block;
         }
 
-        .post-footer {
-            display: flex;
-            justify-content: space-between;
-            font-size: 14px;
-            color: #666;
+        .form-group textarea {
+            height: 150px;
         }
-        .username,
-        .post-title,
-        .post-content {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        .floating-button {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            background-color: #4c9cde;
-            color: #fff;
+
+        button[type="submit"] {
+            display: block;
+            margin-top: 20px;
             padding: 10px 20px;
-            border-radius: 50%;
-            font-size: 16px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            z-index: 9999;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
+            margin: 0 auto;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -181,51 +169,25 @@ if (isset($_COOKIE['username'])){
         <h3>Lorem ipsum dolor sit amet, ea eum labitur scsstie percipitoleat<br/> fabulas complectitur deterruisset at pro</h3>
     </div>
 </section>
-<a href="postluntan.php" class="floating-button">post your content</a>
+
 <!--内容部分-->
-<?php
-include "connect.php";
+<div class="container1" id="content">
+    <h1>post content</h1>
 
-$sql1 = "select title,content,time,username,id from luntan order by id desc";
-$result1 = $conn->query($sql1);
-while($row1 = $result1->fetch_assoc()){
-    $title = $row1['title'];
-    $content = $row1['content'];
-    $time = $row1['time'];
-    $username = $row1['username'];
-    $id = $row1['id'];
-
-    $sql = "select image from users where username = '$username'";
-    $result = $conn->query($sql);
-    $row = $result->fetch_assoc();
-    $image = $row['image'];
-    $path = 'image/'.$image;
-
-    $sql2 = "select count(*) as count from comment where id = '$id'";
-    $result2 = $conn->query($sql2);
-    $row2 = $result2->fetch_assoc();
-    $count = $row2['count'];
-    echo "
-    <div class='post' id='content'>
-    <div class='post-header'>
-        <h2 class='post-title'><a href='comment.php?path=$path&id=$id&username=$username&time=$time'>$title</a></h2>
-        <div class='user-info'>
-            <div class='avatar'>
-                <img src=$path alt='Avatar'>
-            </div>
-            <div class='username'>$username</div>
+    <form action="postluntan-.php" method="POST">
+        <div class="form-group">
+            <label for="title">title：</label>
+            <input type="text" id="title" name="title" required>
         </div>
-    </div>
-    <div class='post-content'>$content</div>
-    <div class='post-footer'>
-        <div class='comment-count'>number of comments $count</div>
-        <div class='post-date'>$time</div>
-    </div>
-    </div>
-    ";
-    echo "<br>";
-}
-?>
+
+        <div class="form-group">
+            <label for="content">content：</label>
+            <textarea id="content" name="content" required></textarea>
+        </div>
+
+        <button type="submit">post</button>
+    </form>
+</div>
 
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {

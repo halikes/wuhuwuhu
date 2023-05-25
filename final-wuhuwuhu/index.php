@@ -114,7 +114,7 @@ if (isset($_COOKIE['username'])){
     <div class="container">
       <div class="row">
         <!-- item -->
-        <a href="luntan2.php">
+        <a href="luntan.php">
           <div class="col-md-3 text-center">
             <div class="b1"> <i class="circle"><img src="images/a1.jpg" /></i>
               <h3>论坛</h3>
@@ -136,7 +136,7 @@ if (isset($_COOKIE['username'])){
         <!-- end: -->
 
         <!-- item -->
-        <a href="#">
+        <a href="chatgpt.php">
           <div class="col-md-3 text-center">
             <div class="b1"><i class="circle"> <img src="images/a3.jpg" /></i>
               <h3>学业规划</h3>

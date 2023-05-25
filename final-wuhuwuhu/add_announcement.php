@@ -5,10 +5,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // 处理表单提交
     $title = $_POST['title'];
     $content = $_POST['content'];
-    $created_at = date('Y-m-d');
+    // $created_at = date('Y-m-d');
 
     // 插入数据到数据库
-    $query = "INSERT INTO gonggao (title, content, created_at) VALUES ('$title', '$content', '$created_at')";
+    $query = "INSERT INTO gonggao (title, content, created_at) VALUES ('$title', '$content', now())";
     if ($conn->query($query) === TRUE) {
         echo "数据插入成功";
         header('Location: gonggao.php');

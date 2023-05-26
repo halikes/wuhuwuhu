@@ -81,7 +81,7 @@ if (isset($_COOKIE['username'])){
           <li>
             <img src="images/slides/4.jpg" />
             <div class="flex-caption container">
-              <h3>今日公告</h3>
+              <h3>공지</h3>
               <!-- <p>Doloribus omnis minus temporibus perferendis.</p>  -->
               <a href="gonggao.php" class="btn btn-theme">Read More</a>
             </div>
@@ -89,7 +89,7 @@ if (isset($_COOKIE['username'])){
           <li>
             <img src="images/slides/5.jpg" alt="" />
             <div class="flex-caption container">
-              <h3>学校地图</h3>
+              <h3>지도</h3>
               <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisi.</p>  -->
               <a href="map.php" class="btn btn-theme">Read More</a>
             </div>
@@ -97,7 +97,7 @@ if (isset($_COOKIE['username'])){
           <li>
             <img src="images/slides/6.jpg" alt="" />
             <div class="flex-caption container">
-              <h3>学业规划</h3>
+              <h3>GPT</h3>
               <!-- <p>Lorem ipsum dolor sit amet, consectetur ersf.</p>  -->
               <a href="chatgpt.php" class="btn btn-theme">Read More</a>
             </div>
@@ -117,8 +117,8 @@ if (isset($_COOKIE['username'])){
         <a href="luntan.php">
           <div class="col-md-3 text-center">
             <div class="b1"> <i class="circle"><img src="images/a1.jpg" /></i>
-              <h3>论坛</h3>
-              <p>校内的论坛平台，寻求帮助</p>
+              <h3>forum</h3>
+              <p>On-campus forum platform for help</p>
             </div>
           </div>
         </a>
@@ -128,8 +128,8 @@ if (isset($_COOKIE['username'])){
         <a href="map.php">
           <div class="col-md-3 text-center">
             <div class="b1"><i class="circle"> <img src="images/a2.jpg" /></i>
-              <h3>地图</h3>
-              <p>2D/3D的学校地图</p>
+              <h3>Map</h3>
+              <p>Map of the school and its surroundings</p>
             </div>
           </div>
         </a>
@@ -139,8 +139,8 @@ if (isset($_COOKIE['username'])){
         <a href="chatgpt.php">
           <div class="col-md-3 text-center">
             <div class="b1"><i class="circle"> <img src="images/a3.jpg" /></i>
-              <h3>学业规划</h3>
-              <p>规划你的大学学习生活/职业规划</p>
+              <h3>GPT</h3>
+              <p>Inquire about relevant academic information</p>
             </div>
           </div>
         </a>
@@ -150,8 +150,8 @@ if (isset($_COOKIE['username'])){
         <a href="gonggao.php">
           <div class="col-md-3 text-center">
             <div class="b1"><i class="circle"> <img src="images/a4.jpg" /></i>
-              <h3>公告</h3>
-              <p>最新的学校公告</p>
+              <h3>공지</h3>
+              <p>Latest School Bulletin</p></br>
             </div>
           </div>
         </a>

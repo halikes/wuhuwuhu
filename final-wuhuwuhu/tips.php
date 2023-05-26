@@ -111,6 +111,27 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        .avatar {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .avatar {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px; /* 调整右侧外边距的值 */
+        }
     </style>
 </head>
 
@@ -189,6 +210,20 @@
         <div class="chat-wrapper">
             <div id="chat-container"></div>
             <form class="input-container" method="POST" action="tips-.php">
+                <?php
+                include "connect.php";
+                $username = $_COOKIE['username'];
+                $sql = "select image from users where username = '$username'";
+                $result = $conn->query($sql);
+                $row = $result->fetch_assoc();
+                $image = $row['image'];
+                $path = 'image/'.$image;
+                echo "
+                <div class='avatar'>
+                    <img src=$path alt='Avatar'>
+                </div>
+                ";
+                ?>
                 <input id="user-input" type="text" name="message" placeholder="Tips 입력">
                 <button type="submit" id="send-button">Send</button>
             </form>

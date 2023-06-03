@@ -67,8 +67,8 @@ if ($result->num_rows > 0) {
         <table id="mainGrid" class="dataGridContainer">
           <thead>
             <tr>
-              <th>Title</th>
-              <th>Date</th>
+              <th style="display:flexbox">Title</th>
+              <th style="display:flexbox">Date</th>
             </tr>
           </thead>
           <tbody>

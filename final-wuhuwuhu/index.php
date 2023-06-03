@@ -256,7 +256,7 @@ if (isset($_COOKIE['username'])){
   </div>
 
 
-  <section id="work" class="page-section page">
+  <section id="work" class="page-section page"  style="display: flex">
     <div class="container text-center">
       <div class="heading">
         <h2>Events</h2>
@@ -269,13 +269,13 @@ if (isset($_COOKIE['username'])){
               <li> <a class="active" data-filter="*" href="#">All</a> </li>
               <li> <a data-filter=".photography" href="#">Design</a> </li>
               <li> <a data-filter=".branding" href="#">Development</a> </li>
-              <li> <a data-filter=".web" href="#">Mobile</a> </li>
+              <li> <a data-filter=".schedule" href="#">schedule</a> </li>
             </ul>
             <ul class="items list-unstyled clearfix animated fadeInRight showing" data-animation="fadeInRight" style="position: relative; height: 438px;">
-              <li class="item branding" style="position: absolute; left: 0px; top: 0px;"> <a href="images/work/1.jpg" class="fancybox"> <img src="images/work/1.jpg" alt="">
+              <li class="item branding" style="position: absolute; left: 0px; top: 0px;"> <a href="images/work/schedule_may.jpg" class="fancybox"> <img src="images/work/schedule_may.jpg" alt="">
                   <div class="overlay"> <span>Etiam porta</span> </div>
                 </a> </li>
-              <li class="item photography" style="position: absolute; left: 292px; top: 0px;"> <a href="images/work/2.jpg" class="fancybox"> <img src="images/work/2.jpg" alt="">
+              <li class="item photography" style="position: absolute; left: 292px; top: 0px;"> <a href="images/work/schedule_april.jpg" class="fancybox"> <img src="images/work/schedule_april.jpg" alt="">
                   <div class="overlay"> <span>Lorem ipsum</span> </div>
                 </a> </li>
               <li class="item branding" style="position: absolute; left: 585px; top: 0px;"> <a href="images/work/3.jpg" class="fancybox"> <img src="images/work/3.jpg" alt="">
@@ -287,13 +287,13 @@ if (isset($_COOKIE['username'])){
               <li class="item photography" style="position: absolute; left: 0px; top: 219px;"> <a href="images/work/5.jpg" class="fancybox"> <img src="images/work/5.jpg" alt="">
                   <div class="overlay"> <span>Etiam volutpat</span> </div>
                 </a> </li>
-              <li class="item web" style="position: absolute; left: 292px; top: 219px;"> <a href="images/work/6.jpg" class="fancybox"> <img src="images/work/6.jpg" alt="">
+              <li class="item schedule" style="position: absolute; left: 292px; top: 219px;"> <a href="images/work/schedule-may.jpg" class="fancybox"> <img src="images/work/6.jpg" alt="">
                   <div class="overlay"> <span>Donec congue </span> </div>
                 </a> </li>
               <li class="item photography" style="position: absolute; left: 585px; top: 219px;"> <a href="images/work/7.jpg" class="fancybox"> <img src="images/work/7.jpg" alt="">
                   <div class="overlay"> <span>Nullam a ullamcorper diam</span> </div>
                 </a> </li>
-              <li class="item web" style="position: absolute; left: 877px; top: 219px;"> <a href="images/work/8.jpg" class="fancybox"> <img src="images/work/8.jpg" alt="">
+              <li class="item schedule" style="position: absolute; left: 877px; top: 219px;"> <a href="images/work/schedule-april.jpg" class="fancybox"> <img src="images/work/8.jpg" alt="">
                   <div class="overlay"> <span>Etiam consequat</span> </div>
                 </a> </li>
             </ul>

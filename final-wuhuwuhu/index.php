@@ -54,7 +54,6 @@ if (isset($_COOKIE['username'])){
             <li class="active" id="firstLink"><a href="#home" class="scroll-link">Home</a></li>
             <li><a href="#services" class="scroll-link">Services</a></li>
             <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-            <li><a href="#work" class="scroll-link">Events</a></li>
             <li><a href="#plans" class="scroll-link">Plans</a></li>
             <?php
             if($state == "Login"){
@@ -117,7 +116,7 @@ if (isset($_COOKIE['username'])){
         <a href="luntan.php">
           <div class="col-md-3 text-center">
             <div class="b1"> <i class="circle"><img src="images/a1.jpg" /></i>
-              <h3>forum</h3>
+              <h3>Forum</h3>
               <p>On-campus forum platform for help</p>
             </div>
           </div>
@@ -256,7 +255,7 @@ if (isset($_COOKIE['username'])){
   </div>
 
 
-  <section id="work" class="page-section page"  style="display: flex">
+  <!-- <section id="work" class="page-section page"  style="display: flex">
     <div class="container text-center">
       <div class="heading">
         <h2>Events</h2>
@@ -301,39 +300,31 @@ if (isset($_COOKIE['username'])){
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section id="plans" class="page-section">
     <div class="container">
       <div class="heading text-center">
         <!-- Heading -->
         <h2>Our Plans</h2>
-        <p>ChatGpt 모델의 세 가지 버전(능력순으로 정렬): babbage < curie < davinci.</p>
-          <p>Babbage: 이것은 세 가지 모델 중 가장 작으며 매개변수 수가 적습니다.그럼에도 불구하고 텍스트 생성 및 이해, 텍스트 분류 등과 같은 기본적인 자연어 처리 작업을 수행할 수 있습니다.</p>
-          <p>Curie: 큐리 모델은 바베지 모델보다 크고 더 많은 매개변수를 가지고 있습니다.이를 통해 긴 텍스트의 이해 및 생성, 세분화된 텍스트 분류 등과 같은 더 복잡한 언어 작업을 처리할 때 더 나은 능력을 가질 수 있습니다.</p>
-          <p>Davinci: 다빈치는 이 세 가지 모델 중 가장 크고 가장 많은 매개변수를 가지고 있습니다.그래서 복잡한 언어 패턴을 이해하고, 심층적인 추리를 하고, 복잡한 문제를 푸는 등의 임무에 최고의 능력을 가지고 있습니다.</p>
-      </div>
-      <div class="row flat">
+            <div>
+        <div class="row flat">
         <div class="col-lg-3 col-md-3 col-xs-12">
           <ul class="plan plan1">
             <li class="plan-name">일반 사용자 </li>
-            <li class="plan-price"> <strong>$0</strong> / month </li>
-              <li> <strong>0/day</strong> babbage </li>
-              <li> <strong>0/day</strong> curie </li>
-              <li> <strong>0/day</strong> davinci </li>
+            <li class="plan-price"> <strong>FREE!</strong> </li>
               <li> <strong>only browse</strong> forum </li>
-            <li> <strong>No</strong> custom notification </li>
+              <li> <strong>free</strong> map </li>
+              <li> <strong>no </strong> GPT </li>
             <li class="plan-action"> <a href="login.php" class="btn btn-danger btn-lg">Join now!</a> </li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-3 col-xs-12">
           <ul class="plan plan2">
             <li class="plan-name">인증된 학생 </li>
-            <li class="plan-price"> <strong>$4.99</strong> / month </li>
-              <li> <strong>20/day</strong> babbage </li>
-              <li> <strong>10/day</strong> curie </li>
-              <li> <strong>0/day</strong> davinci </li>
+            <li class="plan-price"> <strong>FREE!</strong> </li>
               <li> <strong>full</strong> forum </li>
-            <li> <strong>No</strong> custom notification </li>
+              <li> <strong>free</strong> map </li>
+              <li> <strong>10 token </strong> / day</li>
             <li class="plan-action"> <a href="join.php?value=1" class="btn btn-danger btn-lg">Join now!</a> </li>
           </ul>
         </div>
@@ -341,11 +332,9 @@ if (isset($_COOKIE['username'])){
           <ul class="plan plan3">
             <li class="plan-name">고급 회원 </li>
             <li class="plan-price"> <strong>$6.99</strong> / month </li>
-              <li> <strong>99+/day</strong> babbage </li>
-              <li> <strong>20/day</strong> curie </li>
-              <li> <strong>10/day</strong> davinci </li>
               <li> <strong>full</strong> forum </li>
-            <li> <strong>No</strong> custom notification </li>
+              <li> <strong>free</strong> map </li>
+              <li> <strong>20 token </strong> / day</li>
             <li class="plan-action"> <a href="join.php?value=2" class="btn btn-danger btn-lg">Join now!</a> </li>
           </ul>
         </div>
@@ -353,11 +342,9 @@ if (isset($_COOKIE['username'])){
           <ul class="plan plan4">
             <li class="plan-name">상업용 버전 </li>
             <li class="plan-price"> <strong>$9.99</strong> / month </li>
-            <li> <strong>99+/day</strong> babbage </li>
-            <li> <strong>99+/day</strong> curie </li>
-            <li> <strong>20/day</strong> davinci </li>
               <li> <strong>full</strong> forum </li>
-            <li> <strong>Yes</strong> custom notification </li>
+              <li> <strong>free</strong> map </li>
+              <li> <strong>20 token </strong> / day</li>
             <li class="plan-action"> <a href="join.php?value=3" class="btn btn-danger btn-lg">Join now!</a> </li>
           </ul>
         </div>
@@ -391,15 +378,12 @@ if (isset($_COOKIE['username'])){
       <div class="heading text-center">
         <!-- Heading -->
         <h2>About Us</h2>
-        <p>留学生帮助平台</p>
+        <p>International student help platform</p>
       </div>
       <div class="row feature design">
         <div class="area1 columns right">
-          <h3>更好的精准的帮助服务</h3>
-          <p>Lorem ipsum dolor sit amet, ea eum labitur scsstie percipitoleat fabulas complectitur deterruisset at pro. Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt.
-            Nec et jority have suffered alteration. </p>
-          <p>Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt.
-            Nec et amet vidisse mentitumsstie percipitoleat fabulas. </p>
+          <h3>Better accurate help service</h3>
+          <p>This website is a school-based help platform for international students. This website aims to help international students in Korea adapt to school life faster and make it easier for international students to obtain school announcements and information. </p>
         </div>
         <div class="area2 columns feature-media left"> <img src="images/feature-img-1.png" alt="" width="100%"> </div>
       </div>

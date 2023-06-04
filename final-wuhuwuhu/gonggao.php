@@ -85,33 +85,6 @@ if ($result->num_rows > 0) {
               </td>
             </tr>
             <?php } ?>
-            <!--111111-->
-            <tr class="even">
-              <td>
-                <button class="dropdown-trigger">2023-1학기 4차산업혁명창업 마이크로전공 학생모집(~05.19.(금))</button>
-                <div class="dropdown-content">
-                  具体内容
-                </div>
-
-              </td>
-              <td style="text-align:center">
-                2023.05.15
-              </td>
-            </tr>
-            <!--222222-->
-            <tr class="even">
-              <td>
-                <button class="dropdown-trigger">2023학년도 1학기 자동차-sw융합전공 모집</button>
-                <div class="dropdown-content">
-                  具体内容
-                </div>
-
-              </td>
-              <td style="text-align:center">
-                2023.05.11
-              </td>
-            </tr>
-            <!--33333-->
           </tbody>
         </table>
       </div>

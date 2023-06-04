@@ -305,7 +305,7 @@ if (isset($_COOKIE['username'])){
     <div class="container">
       <div class="heading text-center">
         <!-- Heading -->
-        <h2>Our Plans</h2>
+        <h2>Our Benefit plans</h2>
             <div>
         <div class="row flat">
         <div class="col-lg-3 col-md-3 col-xs-12">

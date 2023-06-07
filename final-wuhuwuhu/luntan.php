@@ -20,7 +20,7 @@ if (isset($_COOKIE['username'])){
     <!--[if lt IE 9]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
-    <title>wuhuwuhu</title>
+    <title>Forum</title>
     <meta name="description" content="">
     <meta name="author" content="WebThemez">
     <!--[if lt IE 9]>
@@ -127,11 +127,6 @@ if (isset($_COOKIE['username'])){
             <div id="main-nav" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav" id="mainNav">
                     <li><a href="index.php" class="scroll-link">Home</a></li>
-                    <li><a href="#services" class="scroll-link">Services</a></li>
-                    <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-                    <li><a href="#work" class="scroll-link">Events</a></li>
-                    <li><a href="#plans" class="scroll-link">Plans</a></li>
-                    <li><a href="#team" class="scroll-link">Team</a></li>
                     <li><a href="userpage.php" class="scroll-link">Account</a></li>
                 </ul>
             </div>
@@ -141,6 +136,7 @@ if (isset($_COOKIE['username'])){
     </div>
     <!--/.container-->
 </header>
+
 <!--/.header-->
 <div id="#top"></div>
 
@@ -148,37 +144,37 @@ if (isset($_COOKIE['username'])){
     <div class="banner-container">
         <!-- Slider -->
         <div id="main-slider" class="flexslider">
-            <ul class="slides">
-                <li>
-                    <img src="images/slides/4.jpg" />
-                    <div class="flex-caption container">
-                        <h3>今日公告</h3>
-                        <!-- <p>Doloribus omnis minus temporibus perferendis.</p>  -->
-                        <a href="gonggao.php" class="btn btn-theme">Read More</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/slides/5.jpg" alt="" />
-                    <div class="flex-caption container">
-                        <h3>学校地图</h3>
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisi.</p>  -->
-                        <a href="map.php" class="btn btn-theme">Read More</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/slides/6.jpg" alt="" />
-                    <div class="flex-caption container">
-                        <h3>学业规划</h3>
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetur ersf.</p>  -->
-                        <a href="chatgpt.php" class="btn btn-theme">Read More</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <ul class="slides">
+          <li>
+            <img src="images/slides/4.jpg" />
+            <div class="flex-caption container">
+              <h3>공지</h3>
+              <!-- <p>Doloribus omnis minus temporibus perferendis.</p>  -->
+              <a href="gonggao.php" class="btn btn-theme">Read More</a>
+            </div>
+          </li>
+          <li>
+            <img src="images/slides/5.jpg" alt="" />
+            <div class="flex-caption container">
+              <h3>지도</h3>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisi.</p>  -->
+              <a href="map.php" class="btn btn-theme">Read More</a>
+            </div>
+          </li>
+          <li>
+            <img src="images/slides/6.jpg" alt="" />
+            <div class="flex-caption container">
+              <h3>GPT</h3>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur ersf.</p>  -->
+              <a href="chatgpt.php" class="btn btn-theme">Read More</a>
+            </div>
+          </li>
+        </ul>
+      </div>
         <!-- end slider -->
     </div>
     <div class="container hero-text2">
-        <h3>Lorem ipsum dolor sit amet, ea eum labitur scsstie percipitoleat<br/> fabulas complectitur deterruisset at pro</h3>
+      <h3>로마는 하루아침에 이루어진 것이 아니다<br /> 罗马不是一天建成的 <br /> Rome was not built in a day</h3>
     </div>
 </section>
 <a href="postluntan.php" class="floating-button">post your content</a>

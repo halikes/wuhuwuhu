@@ -306,7 +306,7 @@ if (isset($_COOKIE['username'])){
       <div class="heading text-center">
         <!-- Heading -->
         <h2>Our Benefit plans</h2>
-            <div>
+            <div><br>
         <div class="row flat">
         <div class="col-lg-3 col-md-3 col-xs-12">
           <ul class="plan plan1">
@@ -382,7 +382,7 @@ if (isset($_COOKIE['username'])){
       </div>
       <div class="row feature design">
         <div class="area1 columns right">
-          <h3>Better accurate help service</h3>
+          <h4>Better accurate help service</h4>
           <p>This website is a school-based help platform for international students. This website aims to help international students in Korea adapt to school life faster and make it easier for international students to obtain school announcements and information. </p>
         </div>
         <div class="area2 columns feature-media left"> <img src="images/feature-img-1.png" alt="" width="100%"> </div>

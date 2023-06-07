@@ -20,7 +20,7 @@ if (isset($_COOKIE['username'])){
     <!--[if lt IE 9]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
-    <title>Agile Agency Free Bootstrap Web Template</title>
+    <title>post</title>
     <meta name="description" content="">
     <meta name="author" content="WebThemez">
     <!--[if lt IE 9]>

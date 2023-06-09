@@ -11,7 +11,7 @@
  Target Server Version : 80028
  File Encoding         : 65001
 
- Date: 04/06/2023 21:05:39
+ Date: 09/06/2023 11:23:16
 */
 
 SET NAMES utf8mb4;
@@ -59,29 +59,7 @@ INSERT INTO `comment` (`id`, `username`, `content`, `time`) VALUES (6, '1234', '
 INSERT INTO `comment` (`id`, `username`, `content`, `time`) VALUES (5, '1234', '123123123', '2023-05-25 23:37:18');
 INSERT INTO `comment` (`id`, `username`, `content`, `time`) VALUES (6, 'ztw', 'mm', '2023-05-25 23:56:38');
 INSERT INTO `comment` (`id`, `username`, `content`, `time`) VALUES (6, 'ztw', 'hhhh', '2023-05-26 00:07:21');
-COMMIT;
-
--- ----------------------------
--- Table structure for comments
--- ----------------------------
-DROP TABLE IF EXISTS `comments`;
-CREATE TABLE `comments` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `user_id` int NOT NULL,
-  `post_id` int NOT NULL,
-  `content` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`) USING BTREE,
-  KEY `user_id` (`user_id`) USING BTREE,
-  KEY `post_id` (`post_id`) USING BTREE,
-  CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
-  CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
-
--- ----------------------------
--- Records of comments
--- ----------------------------
-BEGIN;
+INSERT INTO `comment` (`id`, `username`, `content`, `time`) VALUES (8, 'SHIYUHANG', 'Create a calendar: Create a detailed calendar that includes class times, assignment due dates, study time, and other events. Make sure to include all important tasks and activities in your schedule and stick to it.', '2023-06-07 16:17:13');
 COMMIT;
 
 -- ----------------------------
@@ -117,16 +95,16 @@ CREATE TABLE `luntan` (
   `title` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `id` int NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of luntan
 -- ----------------------------
 BEGIN;
-INSERT INTO `luntan` (`username`, `time`, `content`, `title`, `id`) VALUES ('SHIYUHANG', '2023-05-25 20:56:49', 'test', 'test', 3);
-INSERT INTO `luntan` (`username`, `time`, `content`, `title`, `id`) VALUES ('SHIYUHANG', '2023-05-25 20:57:23', 'test2', 'test2', 4);
-INSERT INTO `luntan` (`username`, `time`, `content`, `title`, `id`) VALUES ('syh', '2023-05-25 21:01:04', '123', '123', 5);
-INSERT INTO `luntan` (`username`, `time`, `content`, `title`, `id`) VALUES ('1234', '2023-05-25 21:03:43', 'test', 'test', 6);
+INSERT INTO `luntan` (`username`, `time`, `content`, `title`, `id`) VALUES ('hao', '2023-06-07 15:49:31', '언제 어디서 보는거죠...<br>\r\n타과라 물어볼 친구가 없움..', '전기에너지공학 기말', 7);
+INSERT INTO `luntan` (`username`, `time`, `content`, `title`, `id`) VALUES ('John Smith', '2023-06-07 16:09:46', 'I have taken a lot of professional courses....please', 'How should I organize my time for classes and assignments?', 8);
+INSERT INTO `luntan` (`username`, `time`, `content`, `title`, `id`) VALUES ('syh', '2023-06-07 16:12:04', '컴퓨터학부 신입생', '전공과목은 어떻게 선택하나요?', 9);
+INSERT INTO `luntan` (`username`, `time`, `content`, `title`, `id`) VALUES ('SHIYUHANG', '2023-06-07 16:14:20', '해를 거듭할수록 창ㄹ이 되가는구나<br>\r\n이젠 하다하다 타코야기라니..<br>\r\n치킨 주던 시절은 어디갔나', '과기대 야식사업', 10);
 COMMIT;
 
 -- ----------------------------
@@ -192,7 +170,7 @@ CREATE TABLE `users` (
   `image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `gptusage` int NOT NULL DEFAULT '20',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of users
@@ -205,6 +183,7 @@ INSERT INTO `users` (`id`, `username`, `password`, `permission`, `image`, `gptus
 INSERT INTO `users` (`id`, `username`, `password`, `permission`, `image`, `gptusage`) VALUES (11, 'root', 'root', '0', NULL, 20);
 INSERT INTO `users` (`id`, `username`, `password`, `permission`, `image`, `gptusage`) VALUES (12, 'ztw', '123', '2', '12.jpg', 30);
 INSERT INTO `users` (`id`, `username`, `password`, `permission`, `image`, `gptusage`) VALUES (13, 'hao', 'hao', '0', NULL, 20);
+INSERT INTO `users` (`id`, `username`, `password`, `permission`, `image`, `gptusage`) VALUES (14, 'John Smith', '123', '0', NULL, 20);
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
